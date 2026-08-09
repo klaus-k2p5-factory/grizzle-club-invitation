@@ -34,11 +34,15 @@
     revealItems.forEach((el) => el.classList.add('is-visible'));
   }
 
-  if (mobileCta && requestSection && 'IntersectionObserver' in window) {
-    const ctaObserver = new IntersectionObserver(([entry]) => {
-      mobileCta.style.display = entry.isIntersecting ? 'none' : '';
-    }, { threshold: 0.08 });
-    ctaObserver.observe(requestSection);
+  if (mobileCta && requestSection) {
+    const updateMobileCta = () => {
+      const rect = requestSection.getBoundingClientRect();
+      const intersects = rect.top < window.innerHeight && rect.bottom > 0;
+      mobileCta.style.display = intersects ? 'none' : '';
+    };
+    updateMobileCta();
+    window.addEventListener('scroll', updateMobileCta, { passive: true });
+    window.addEventListener('resize', updateMobileCta, { passive: true });
   }
 
   const params = new URLSearchParams(window.location.search);
