@@ -1,0 +1,1366 @@
+{
+  "generatedAt": "2026-08-09T14:12:38.435Z",
+  "pages": {
+    "desktop": {
+      "label": "desktop",
+      "url": "http://127.0.0.1:8080/",
+      "title": "Home EV Charging Rewards | Independent Grizzl-E Club Referral",
+      "lang": "en-CA",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "documentSize": {
+        "clientWidth": 1440,
+        "scrollWidth": 1739,
+        "scrollHeight": 6667
+      },
+      "duplicateIds": [],
+      "horizontalOverflow": [
+        {
+          "tag": "DIV",
+          "cls": "honeypot",
+          "text": "Leave this field empty",
+          "rect": {
+            "left": -9343,
+            "right": -9342,
+            "width": 1
+          }
+        },
+        {
+          "tag": "LABEL",
+          "cls": "",
+          "text": "Leave this field empty",
+          "rect": {
+            "left": -9343,
+            "right": -9147,
+            "width": 196
+          }
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "text": "",
+          "rect": {
+            "left": -9343,
+            "right": -9147,
+            "width": 196
+          }
+        }
+      ],
+      "smallText": [
+        {
+          "tag": "SPAN",
+          "cls": "fact-kicker",
+          "size": "11px",
+          "text": "CHARGER HARDWARE"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "fact-kicker",
+          "size": "11px",
+          "text": "CASH REWARDS"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "fact-kicker",
+          "size": "11px",
+          "text": "SECURITY DEPOSIT"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "fact-kicker",
+          "size": "11px",
+          "text": "CONNECTED CHARGER"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "size": "10.8333px",
+          "text": "Optional"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "size": "11.5px",
+          "text": "I agree and request my invitation."
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "size": "11.5px",
+          "text": "CAD $0.01 per eligible kWh"
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "size": "11px",
+          "text": "privacy notice"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "size": "11px",
+          "text": "2026"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "size": "11px",
+          "text": "Not affiliated with, endorsed by or operated by the Government of Canada or United Chargers Inc."
+        }
+      ],
+      "unlabeledControls": [],
+      "controls": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "name": "entry.1490423963",
+          "label": "Full name *",
+          "required": true,
+          "checked": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "email",
+          "name": "entry.330297441",
+          "label": "Email address *",
+          "required": true,
+          "checked": false
+        },
+        {
+          "tag": "SELECT",
+          "type": "select-one",
+          "name": "entry.2114701760",
+          "label": "Province or territory * Select your province or territory Alberta British Columbia Manitoba New Brunswick Newfoundland and Labrador Northwest Territories Nova Scotia Nunavut Ontari",
+          "required": true
+        },
+        {
+          "tag": "SELECT",
+          "type": "select-one",
+          "name": "entry.1696373486",
+          "label": "Home charging readiness Optional Select one Home parking + installation plan Home parking; need electrician assessment I’m not sure yet",
+          "required": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "name": "entry.305444311",
+          "label": "I agree and request my invitation. I want one Grizzl-E Club referral invitation. I consent to the operator of this independent referral page sharing my email with United Chargers I",
+          "required": true,
+          "checked": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "name": "website",
+          "label": "Leave this field empty",
+          "required": false,
+          "checked": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "submit",
+          "name": "",
+          "label": "Request my invitation →",
+          "required": false
+        }
+      ],
+      "anchors": [
+        {
+          "text": "Skip to main content",
+          "href": "#main",
+          "resolved": "http://127.0.0.1:8080/#main",
+          "visible": true
+        },
+        {
+          "text": "Referral disclosure",
+          "href": "#referral-disclosure",
+          "resolved": "http://127.0.0.1:8080/#referral-disclosure",
+          "visible": true
+        },
+        {
+          "text": "EV Home Rewards",
+          "href": "#top",
+          "resolved": "http://127.0.0.1:8080/#top",
+          "visible": true
+        },
+        {
+          "text": "How it works",
+          "href": "#how-it-works",
+          "resolved": "http://127.0.0.1:8080/#how-it-works",
+          "visible": true
+        },
+        {
+          "text": "Costs & terms",
+          "href": "#costs",
+          "resolved": "http://127.0.0.1:8080/#costs",
+          "visible": true
+        },
+        {
+          "text": "FAQ",
+          "href": "#faq",
+          "resolved": "http://127.0.0.1:8080/#faq",
+          "visible": true
+        },
+        {
+          "text": "Check your fit",
+          "href": "#request",
+          "resolved": "http://127.0.0.1:8080/#request",
+          "visible": true
+        },
+        {
+          "text": "Request an invitation",
+          "href": "#request",
+          "resolved": "http://127.0.0.1:8080/#request",
+          "visible": true
+        },
+        {
+          "text": "See how it works",
+          "href": "#how-it-works",
+          "resolved": "http://127.0.0.1:8080/#how-it-works",
+          "visible": true
+        },
+        {
+          "text": "Clean Fuel Regulations",
+          "href": "https://www.canada.ca/en/environment-climate-change/services/managing-pollution/energy-production/fuel-regulations/clean-fuel-regulations/about.html",
+          "resolved": "https://www.canada.ca/en/environment-climate-change/services/managing-pollution/energy-production/fuel-regulations/clean-fuel-regulations/about.html",
+          "visible": true
+        },
+        {
+          "text": "Check whether it fits your situation →",
+          "href": "#request",
+          "resolved": "http://127.0.0.1:8080/#request",
+          "visible": true
+        },
+        {
+          "text": "privacy notice",
+          "href": "privacy.html",
+          "resolved": "http://127.0.0.1:8080/privacy.html",
+          "visible": true
+        },
+        {
+          "text": "Request an invitation",
+          "href": "#request",
+          "resolved": "http://127.0.0.1:8080/#request",
+          "visible": true
+        },
+        {
+          "text": "EV Home Rewards",
+          "href": "#top",
+          "resolved": "http://127.0.0.1:8080/#top",
+          "visible": true
+        },
+        {
+          "text": "Grizzl-E Club terms",
+          "href": "https://club.grizzl-e.com/en/terms",
+          "resolved": "https://club.grizzl-e.com/en/terms",
+          "visible": true
+        },
+        {
+          "text": "Membership privacy & data terms",
+          "href": "https://club.grizzl-e.com/en/privacy-data-collection",
+          "resolved": "https://club.grizzl-e.com/en/privacy-data-collection",
+          "visible": true
+        },
+        {
+          "text": "Canada Clean Fuel Regulations",
+          "href": "https://www.canada.ca/en/environment-climate-change/services/managing-pollution/energy-production/fuel-regulations/clean-fuel-regulations/about.html",
+          "resolved": "https://www.canada.ca/en/environment-climate-change/services/managing-pollution/energy-production/fuel-regulations/clean-fuel-regulations/about.html",
+          "visible": true
+        },
+        {
+          "text": "Privacy notice",
+          "href": "privacy.html",
+          "resolved": "http://127.0.0.1:8080/privacy.html",
+          "visible": true
+        },
+        {
+          "text": "Contact the page operator",
+          "href": "mailto:hermancore1980@gmail.com",
+          "resolved": "mailto:hermancore1980@gmail.com",
+          "visible": true
+        },
+        {
+          "text": "Referral disclosure",
+          "href": "#referral-disclosure",
+          "resolved": "http://127.0.0.1:8080/#referral-disclosure",
+          "visible": true
+        },
+        {
+          "text": "Check your fit",
+          "href": "#request",
+          "resolved": "http://127.0.0.1:8080/#request",
+          "visible": false
+        }
+      ],
+      "badInternalAnchors": [],
+      "images": [
+        {
+          "src": "assets/hero-ev-home.webp",
+          "alt": "An electric vehicle charging at a Canadian home at dusk",
+          "complete": true,
+          "naturalWidth": 1672,
+          "naturalHeight": 941
+        }
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Home EV charging that can pay you back."
+        },
+        {
+          "level": 2,
+          "text": "Canada created the credit system. Grizzl-E runs the Club."
+        },
+        {
+          "level": 3,
+          "text": "Request your invitation"
+        },
+        {
+          "level": 3,
+          "text": "Apply and choose"
+        },
+        {
+          "level": 3,
+          "text": "Install and connect"
+        },
+        {
+          "level": 3,
+          "text": "Charge and earn"
+        },
+        {
+          "level": 2,
+          "text": "A charger now. Rewards every time it connects."
+        },
+        {
+          "level": 2,
+          "text": "What is included—and what remains yours to cover."
+        },
+        {
+          "level": 3,
+          "text": "Program provides"
+        },
+        {
+          "level": 3,
+          "text": "You cover or agree to"
+        },
+        {
+          "level": 2,
+          "text": "You can make connected home charging part of your routine."
+        },
+        {
+          "level": 2,
+          "text": "Ready to see if the Club fits?"
+        },
+        {
+          "level": 3,
+          "text": "Request received."
+        },
+        {
+          "level": 2,
+          "text": "Clear answers before you share your email."
+        },
+        {
+          "level": 2,
+          "text": "Find out whether connected charging can work harder for you."
+        }
+      ],
+      "headingJumps": [],
+      "focusableCount": 32,
+      "form": {
+        "action": "https://docs.google.com/forms/d/e/1FAIpQLScjHfMXqzjCqSEOenYSD5lNSnLQ9gwlrP4i1H_WJ5vR4VBIMg/formResponse",
+        "method": "post",
+        "target": "form-target",
+        "novalidate": true
+      },
+      "consent": {
+        "checked": false,
+        "required": true,
+        "value": "I agree and request my invitation"
+      },
+      "disclosurePresent": true,
+      "referralRatePresent": true,
+      "keyTermsPresent": {
+        "refundableDeposit": true,
+        "shipping": true,
+        "installation": true,
+        "wifi": true,
+        "data": true,
+        "ownershipReturn": true
+      },
+      "httpStatus": 200
+    },
+    "privacyDesktop": {
+      "label": "privacyDesktop",
+      "url": "http://127.0.0.1:8080/privacy.html",
+      "title": "Privacy Notice | EV Home Rewards",
+      "lang": "en-CA",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "documentSize": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 2467
+      },
+      "duplicateIds": [],
+      "horizontalOverflow": [],
+      "smallText": [
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "size": "11px",
+          "text": "© 2026 EV Home Rewards"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "size": "11px",
+          "text": "Independent member referral information."
+        }
+      ],
+      "unlabeledControls": [],
+      "controls": [],
+      "anchors": [
+        {
+          "text": "Skip to main content",
+          "href": "#main",
+          "resolved": "http://127.0.0.1:8080/privacy.html#main",
+          "visible": true
+        },
+        {
+          "text": "EV Home Rewards",
+          "href": "index.html",
+          "resolved": "http://127.0.0.1:8080/index.html",
+          "visible": true
+        },
+        {
+          "text": "Request an invitation",
+          "href": "index.html#request",
+          "resolved": "http://127.0.0.1:8080/index.html#request",
+          "visible": true
+        },
+        {
+          "text": "hermancore1980@gmail.com",
+          "href": "mailto:hermancore1980@gmail.com",
+          "resolved": "mailto:hermancore1980@gmail.com",
+          "visible": true
+        },
+        {
+          "text": "Grizzl-E Club terms",
+          "href": "https://club.grizzl-e.com/en/terms",
+          "resolved": "https://club.grizzl-e.com/en/terms",
+          "visible": true
+        },
+        {
+          "text": "membership privacy and data terms",
+          "href": "https://club.grizzl-e.com/en/privacy-data-collection",
+          "resolved": "https://club.grizzl-e.com/en/privacy-data-collection",
+          "visible": true
+        },
+        {
+          "text": "← Return to the information page",
+          "href": "index.html",
+          "resolved": "http://127.0.0.1:8080/index.html",
+          "visible": true
+        }
+      ],
+      "badInternalAnchors": [],
+      "images": [],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Your information has one job."
+        },
+        {
+          "level": 2,
+          "text": "What this page collects"
+        },
+        {
+          "level": 2,
+          "text": "Why it is collected"
+        },
+        {
+          "level": 2,
+          "text": "Where it is stored"
+        },
+        {
+          "level": 2,
+          "text": "Who receives it"
+        },
+        {
+          "level": 2,
+          "text": "Consent and referral relationship"
+        },
+        {
+          "level": 2,
+          "text": "Retention and deletion"
+        },
+        {
+          "level": 2,
+          "text": "No automated marketing"
+        },
+        {
+          "level": 2,
+          "text": "Security"
+        },
+        {
+          "level": 2,
+          "text": "Official policies"
+        }
+      ],
+      "headingJumps": [],
+      "focusableCount": 7,
+      "form": null,
+      "consent": null,
+      "disclosurePresent": false,
+      "referralRatePresent": true,
+      "keyTermsPresent": {
+        "refundableDeposit": false,
+        "shipping": false,
+        "installation": false,
+        "wifi": false,
+        "data": false,
+        "ownershipReturn": false
+      }
+    },
+    "mobile": {
+      "label": "mobile",
+      "url": "http://127.0.0.1:8080/",
+      "title": "Home EV Charging Rewards | Independent Grizzl-E Club Referral",
+      "lang": "en-CA",
+      "viewport": {
+        "width": 402,
+        "height": 870,
+        "dpr": 1
+      },
+      "documentSize": {
+        "clientWidth": 390,
+        "scrollWidth": 402,
+        "scrollHeight": 10739
+      },
+      "duplicateIds": [],
+      "horizontalOverflow": [
+        {
+          "tag": "DIV",
+          "cls": "honeypot",
+          "text": "Leave this field empty",
+          "rect": {
+            "left": -9989,
+            "right": -9988,
+            "width": 1
+          }
+        },
+        {
+          "tag": "LABEL",
+          "cls": "",
+          "text": "Leave this field empty",
+          "rect": {
+            "left": -9989,
+            "right": -9793,
+            "width": 196
+          }
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "text": "",
+          "rect": {
+            "left": -9989,
+            "right": -9793,
+            "width": 196
+          }
+        }
+      ],
+      "smallText": [
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "size": "10px",
+          "text": "Independent member referral page"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "fact-kicker",
+          "size": "11px",
+          "text": "CHARGER HARDWARE"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "fact-kicker",
+          "size": "11px",
+          "text": "CASH REWARDS"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "fact-kicker",
+          "size": "11px",
+          "text": "SECURITY DEPOSIT"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "fact-kicker",
+          "size": "11px",
+          "text": "CONNECTED CHARGER"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "size": "10.8333px",
+          "text": "Optional"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "size": "11.5px",
+          "text": "I agree and request my invitation."
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "size": "11.5px",
+          "text": "CAD $0.01 per eligible kWh"
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "size": "11px",
+          "text": "privacy notice"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "size": "11px",
+          "text": "2026"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "size": "11px",
+          "text": "Not affiliated with, endorsed by or operated by the Government of Canada or United Chargers Inc."
+        }
+      ],
+      "unlabeledControls": [],
+      "controls": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "name": "entry.1490423963",
+          "label": "Full name *",
+          "required": true,
+          "checked": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "email",
+          "name": "entry.330297441",
+          "label": "Email address *",
+          "required": true,
+          "checked": false
+        },
+        {
+          "tag": "SELECT",
+          "type": "select-one",
+          "name": "entry.2114701760",
+          "label": "Province or territory * Select your province or territory Alberta British Columbia Manitoba New Brunswick Newfoundland and Labrador Northwest Territories Nova Scotia Nunavut Ontari",
+          "required": true
+        },
+        {
+          "tag": "SELECT",
+          "type": "select-one",
+          "name": "entry.1696373486",
+          "label": "Home charging readiness Optional Select one Home parking + installation plan Home parking; need electrician assessment I’m not sure yet",
+          "required": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "name": "entry.305444311",
+          "label": "I agree and request my invitation. I want one Grizzl-E Club referral invitation. I consent to the operator of this independent referral page sharing my email with United Chargers I",
+          "required": true,
+          "checked": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "name": "website",
+          "label": "Leave this field empty",
+          "required": false,
+          "checked": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "submit",
+          "name": "",
+          "label": "Request my invitation →",
+          "required": false
+        }
+      ],
+      "anchors": [
+        {
+          "text": "Skip to main content",
+          "href": "#main",
+          "resolved": "http://127.0.0.1:8080/#main",
+          "visible": true
+        },
+        {
+          "text": "Referral disclosure",
+          "href": "#referral-disclosure",
+          "resolved": "http://127.0.0.1:8080/#referral-disclosure",
+          "visible": false
+        },
+        {
+          "text": "EV Home Rewards",
+          "href": "#top",
+          "resolved": "http://127.0.0.1:8080/#top",
+          "visible": true
+        },
+        {
+          "text": "How it works",
+          "href": "#how-it-works",
+          "resolved": "http://127.0.0.1:8080/#how-it-works",
+          "visible": false
+        },
+        {
+          "text": "Costs & terms",
+          "href": "#costs",
+          "resolved": "http://127.0.0.1:8080/#costs",
+          "visible": false
+        },
+        {
+          "text": "FAQ",
+          "href": "#faq",
+          "resolved": "http://127.0.0.1:8080/#faq",
+          "visible": false
+        },
+        {
+          "text": "Check your fit",
+          "href": "#request",
+          "resolved": "http://127.0.0.1:8080/#request",
+          "visible": false
+        },
+        {
+          "text": "Request an invitation",
+          "href": "#request",
+          "resolved": "http://127.0.0.1:8080/#request",
+          "visible": true
+        },
+        {
+          "text": "See how it works",
+          "href": "#how-it-works",
+          "resolved": "http://127.0.0.1:8080/#how-it-works",
+          "visible": true
+        },
+        {
+          "text": "Clean Fuel Regulations",
+          "href": "https://www.canada.ca/en/environment-climate-change/services/managing-pollution/energy-production/fuel-regulations/clean-fuel-regulations/about.html",
+          "resolved": "https://www.canada.ca/en/environment-climate-change/services/managing-pollution/energy-production/fuel-regulations/clean-fuel-regulations/about.html",
+          "visible": true
+        },
+        {
+          "text": "Check whether it fits your situation →",
+          "href": "#request",
+          "resolved": "http://127.0.0.1:8080/#request",
+          "visible": true
+        },
+        {
+          "text": "privacy notice",
+          "href": "privacy.html",
+          "resolved": "http://127.0.0.1:8080/privacy.html",
+          "visible": true
+        },
+        {
+          "text": "Request an invitation",
+          "href": "#request",
+          "resolved": "http://127.0.0.1:8080/#request",
+          "visible": true
+        },
+        {
+          "text": "EV Home Rewards",
+          "href": "#top",
+          "resolved": "http://127.0.0.1:8080/#top",
+          "visible": true
+        },
+        {
+          "text": "Grizzl-E Club terms",
+          "href": "https://club.grizzl-e.com/en/terms",
+          "resolved": "https://club.grizzl-e.com/en/terms",
+          "visible": true
+        },
+        {
+          "text": "Membership privacy & data terms",
+          "href": "https://club.grizzl-e.com/en/privacy-data-collection",
+          "resolved": "https://club.grizzl-e.com/en/privacy-data-collection",
+          "visible": true
+        },
+        {
+          "text": "Canada Clean Fuel Regulations",
+          "href": "https://www.canada.ca/en/environment-climate-change/services/managing-pollution/energy-production/fuel-regulations/clean-fuel-regulations/about.html",
+          "resolved": "https://www.canada.ca/en/environment-climate-change/services/managing-pollution/energy-production/fuel-regulations/clean-fuel-regulations/about.html",
+          "visible": true
+        },
+        {
+          "text": "Privacy notice",
+          "href": "privacy.html",
+          "resolved": "http://127.0.0.1:8080/privacy.html",
+          "visible": true
+        },
+        {
+          "text": "Contact the page operator",
+          "href": "mailto:hermancore1980@gmail.com",
+          "resolved": "mailto:hermancore1980@gmail.com",
+          "visible": true
+        },
+        {
+          "text": "Referral disclosure",
+          "href": "#referral-disclosure",
+          "resolved": "http://127.0.0.1:8080/#referral-disclosure",
+          "visible": true
+        },
+        {
+          "text": "Check your fit",
+          "href": "#request",
+          "resolved": "http://127.0.0.1:8080/#request",
+          "visible": true
+        }
+      ],
+      "badInternalAnchors": [],
+      "images": [
+        {
+          "src": "assets/hero-ev-home.webp",
+          "alt": "An electric vehicle charging at a Canadian home at dusk",
+          "complete": true,
+          "naturalWidth": 1672,
+          "naturalHeight": 941
+        }
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Home EV charging that can pay you back."
+        },
+        {
+          "level": 2,
+          "text": "Canada created the credit system. Grizzl-E runs the Club."
+        },
+        {
+          "level": 3,
+          "text": "Request your invitation"
+        },
+        {
+          "level": 3,
+          "text": "Apply and choose"
+        },
+        {
+          "level": 3,
+          "text": "Install and connect"
+        },
+        {
+          "level": 3,
+          "text": "Charge and earn"
+        },
+        {
+          "level": 2,
+          "text": "A charger now. Rewards every time it connects."
+        },
+        {
+          "level": 2,
+          "text": "What is included—and what remains yours to cover."
+        },
+        {
+          "level": 3,
+          "text": "Program provides"
+        },
+        {
+          "level": 3,
+          "text": "You cover or agree to"
+        },
+        {
+          "level": 2,
+          "text": "You can make connected home charging part of your routine."
+        },
+        {
+          "level": 2,
+          "text": "Ready to see if the Club fits?"
+        },
+        {
+          "level": 3,
+          "text": "Request received."
+        },
+        {
+          "level": 2,
+          "text": "Clear answers before you share your email."
+        },
+        {
+          "level": 2,
+          "text": "Find out whether connected charging can work harder for you."
+        }
+      ],
+      "headingJumps": [],
+      "focusableCount": 28,
+      "form": {
+        "action": "https://docs.google.com/forms/d/e/1FAIpQLScjHfMXqzjCqSEOenYSD5lNSnLQ9gwlrP4i1H_WJ5vR4VBIMg/formResponse",
+        "method": "post",
+        "target": "form-target",
+        "novalidate": true
+      },
+      "consent": {
+        "checked": false,
+        "required": true,
+        "value": "I agree and request my invitation"
+      },
+      "disclosurePresent": true,
+      "referralRatePresent": true,
+      "keyTermsPresent": {
+        "refundableDeposit": true,
+        "shipping": true,
+        "installation": true,
+        "wifi": true,
+        "data": true,
+        "ownershipReturn": true
+      },
+      "httpStatus": 200
+    },
+    "narrow-mobile": {
+      "label": "narrow-mobile",
+      "url": "http://127.0.0.1:8080/",
+      "title": "Home EV Charging Rewards | Independent Grizzl-E Club Referral",
+      "lang": "en-CA",
+      "viewport": {
+        "width": 332,
+        "height": 843,
+        "dpr": 1
+      },
+      "documentSize": {
+        "clientWidth": 320,
+        "scrollWidth": 332,
+        "scrollHeight": 11640
+      },
+      "duplicateIds": [],
+      "horizontalOverflow": [
+        {
+          "tag": "DIV",
+          "cls": "honeypot",
+          "text": "Leave this field empty",
+          "rect": {
+            "left": -9989,
+            "right": -9988,
+            "width": 1
+          }
+        },
+        {
+          "tag": "LABEL",
+          "cls": "",
+          "text": "Leave this field empty",
+          "rect": {
+            "left": -9989,
+            "right": -9793,
+            "width": 196
+          }
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "text": "",
+          "rect": {
+            "left": -9989,
+            "right": -9793,
+            "width": 196
+          }
+        }
+      ],
+      "smallText": [
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "size": "10px",
+          "text": "Independent member referral page"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "fact-kicker",
+          "size": "11px",
+          "text": "CHARGER HARDWARE"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "fact-kicker",
+          "size": "11px",
+          "text": "CASH REWARDS"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "fact-kicker",
+          "size": "11px",
+          "text": "SECURITY DEPOSIT"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "fact-kicker",
+          "size": "11px",
+          "text": "CONNECTED CHARGER"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "size": "10.8333px",
+          "text": "Optional"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "size": "11.5px",
+          "text": "I agree and request my invitation."
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "size": "11.5px",
+          "text": "CAD $0.01 per eligible kWh"
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "size": "11px",
+          "text": "privacy notice"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "size": "11px",
+          "text": "2026"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "size": "11px",
+          "text": "Not affiliated with, endorsed by or operated by the Government of Canada or United Chargers Inc."
+        }
+      ],
+      "unlabeledControls": [],
+      "controls": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "name": "entry.1490423963",
+          "label": "Full name *",
+          "required": true,
+          "checked": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "email",
+          "name": "entry.330297441",
+          "label": "Email address *",
+          "required": true,
+          "checked": false
+        },
+        {
+          "tag": "SELECT",
+          "type": "select-one",
+          "name": "entry.2114701760",
+          "label": "Province or territory * Select your province or territory Alberta British Columbia Manitoba New Brunswick Newfoundland and Labrador Northwest Territories Nova Scotia Nunavut Ontari",
+          "required": true
+        },
+        {
+          "tag": "SELECT",
+          "type": "select-one",
+          "name": "entry.1696373486",
+          "label": "Home charging readiness Optional Select one Home parking + installation plan Home parking; need electrician assessment I’m not sure yet",
+          "required": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "name": "entry.305444311",
+          "label": "I agree and request my invitation. I want one Grizzl-E Club referral invitation. I consent to the operator of this independent referral page sharing my email with United Chargers I",
+          "required": true,
+          "checked": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "name": "website",
+          "label": "Leave this field empty",
+          "required": false,
+          "checked": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "submit",
+          "name": "",
+          "label": "Request my invitation →",
+          "required": false
+        }
+      ],
+      "anchors": [
+        {
+          "text": "Skip to main content",
+          "href": "#main",
+          "resolved": "http://127.0.0.1:8080/#main",
+          "visible": true
+        },
+        {
+          "text": "Referral disclosure",
+          "href": "#referral-disclosure",
+          "resolved": "http://127.0.0.1:8080/#referral-disclosure",
+          "visible": false
+        },
+        {
+          "text": "EV Home Rewards",
+          "href": "#top",
+          "resolved": "http://127.0.0.1:8080/#top",
+          "visible": true
+        },
+        {
+          "text": "How it works",
+          "href": "#how-it-works",
+          "resolved": "http://127.0.0.1:8080/#how-it-works",
+          "visible": false
+        },
+        {
+          "text": "Costs & terms",
+          "href": "#costs",
+          "resolved": "http://127.0.0.1:8080/#costs",
+          "visible": false
+        },
+        {
+          "text": "FAQ",
+          "href": "#faq",
+          "resolved": "http://127.0.0.1:8080/#faq",
+          "visible": false
+        },
+        {
+          "text": "Check your fit",
+          "href": "#request",
+          "resolved": "http://127.0.0.1:8080/#request",
+          "visible": false
+        },
+        {
+          "text": "Request an invitation",
+          "href": "#request",
+          "resolved": "http://127.0.0.1:8080/#request",
+          "visible": true
+        },
+        {
+          "text": "See how it works",
+          "href": "#how-it-works",
+          "resolved": "http://127.0.0.1:8080/#how-it-works",
+          "visible": true
+        },
+        {
+          "text": "Clean Fuel Regulations",
+          "href": "https://www.canada.ca/en/environment-climate-change/services/managing-pollution/energy-production/fuel-regulations/clean-fuel-regulations/about.html",
+          "resolved": "https://www.canada.ca/en/environment-climate-change/services/managing-pollution/energy-production/fuel-regulations/clean-fuel-regulations/about.html",
+          "visible": true
+        },
+        {
+          "text": "Check whether it fits your situation →",
+          "href": "#request",
+          "resolved": "http://127.0.0.1:8080/#request",
+          "visible": true
+        },
+        {
+          "text": "privacy notice",
+          "href": "privacy.html",
+          "resolved": "http://127.0.0.1:8080/privacy.html",
+          "visible": true
+        },
+        {
+          "text": "Request an invitation",
+          "href": "#request",
+          "resolved": "http://127.0.0.1:8080/#request",
+          "visible": true
+        },
+        {
+          "text": "EV Home Rewards",
+          "href": "#top",
+          "resolved": "http://127.0.0.1:8080/#top",
+          "visible": true
+        },
+        {
+          "text": "Grizzl-E Club terms",
+          "href": "https://club.grizzl-e.com/en/terms",
+          "resolved": "https://club.grizzl-e.com/en/terms",
+          "visible": true
+        },
+        {
+          "text": "Membership privacy & data terms",
+          "href": "https://club.grizzl-e.com/en/privacy-data-collection",
+          "resolved": "https://club.grizzl-e.com/en/privacy-data-collection",
+          "visible": true
+        },
+        {
+          "text": "Canada Clean Fuel Regulations",
+          "href": "https://www.canada.ca/en/environment-climate-change/services/managing-pollution/energy-production/fuel-regulations/clean-fuel-regulations/about.html",
+          "resolved": "https://www.canada.ca/en/environment-climate-change/services/managing-pollution/energy-production/fuel-regulations/clean-fuel-regulations/about.html",
+          "visible": true
+        },
+        {
+          "text": "Privacy notice",
+          "href": "privacy.html",
+          "resolved": "http://127.0.0.1:8080/privacy.html",
+          "visible": true
+        },
+        {
+          "text": "Contact the page operator",
+          "href": "mailto:hermancore1980@gmail.com",
+          "resolved": "mailto:hermancore1980@gmail.com",
+          "visible": true
+        },
+        {
+          "text": "Referral disclosure",
+          "href": "#referral-disclosure",
+          "resolved": "http://127.0.0.1:8080/#referral-disclosure",
+          "visible": true
+        },
+        {
+          "text": "Check your fit",
+          "href": "#request",
+          "resolved": "http://127.0.0.1:8080/#request",
+          "visible": true
+        }
+      ],
+      "badInternalAnchors": [],
+      "images": [
+        {
+          "src": "assets/hero-ev-home.webp",
+          "alt": "An electric vehicle charging at a Canadian home at dusk",
+          "complete": true,
+          "naturalWidth": 1672,
+          "naturalHeight": 941
+        }
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Home EV charging that can pay you back."
+        },
+        {
+          "level": 2,
+          "text": "Canada created the credit system. Grizzl-E runs the Club."
+        },
+        {
+          "level": 3,
+          "text": "Request your invitation"
+        },
+        {
+          "level": 3,
+          "text": "Apply and choose"
+        },
+        {
+          "level": 3,
+          "text": "Install and connect"
+        },
+        {
+          "level": 3,
+          "text": "Charge and earn"
+        },
+        {
+          "level": 2,
+          "text": "A charger now. Rewards every time it connects."
+        },
+        {
+          "level": 2,
+          "text": "What is included—and what remains yours to cover."
+        },
+        {
+          "level": 3,
+          "text": "Program provides"
+        },
+        {
+          "level": 3,
+          "text": "You cover or agree to"
+        },
+        {
+          "level": 2,
+          "text": "You can make connected home charging part of your routine."
+        },
+        {
+          "level": 2,
+          "text": "Ready to see if the Club fits?"
+        },
+        {
+          "level": 3,
+          "text": "Request received."
+        },
+        {
+          "level": 2,
+          "text": "Clear answers before you share your email."
+        },
+        {
+          "level": 2,
+          "text": "Find out whether connected charging can work harder for you."
+        }
+      ],
+      "headingJumps": [],
+      "focusableCount": 28,
+      "form": {
+        "action": "https://docs.google.com/forms/d/e/1FAIpQLScjHfMXqzjCqSEOenYSD5lNSnLQ9gwlrP4i1H_WJ5vR4VBIMg/formResponse",
+        "method": "post",
+        "target": "form-target",
+        "novalidate": true
+      },
+      "consent": {
+        "checked": false,
+        "required": true,
+        "value": "I agree and request my invitation"
+      },
+      "disclosurePresent": true,
+      "referralRatePresent": true,
+      "keyTermsPresent": {
+        "refundableDeposit": true,
+        "shipping": true,
+        "installation": true,
+        "wifi": true,
+        "data": true,
+        "ownershipReturn": true
+      },
+      "httpStatus": 200
+    }
+  },
+  "interactions": {
+    "emptySubmit": {
+      "error": "Please complete all required fields and accept the consent statement.",
+      "activeTag": "INPUT",
+      "activeName": "entry.1490423963",
+      "successHidden": true,
+      "formHidden": false
+    },
+    "noConsentSubmit": {
+      "error": "Please complete all required fields and accept the consent statement.",
+      "activeTag": "INPUT",
+      "activeName": "entry.305444311",
+      "consentChecked": false,
+      "successHidden": true,
+      "formHidden": false
+    },
+    "sourceSanitization": "website:QAcampaign",
+    "mobileCtaAtRequest": "block"
+  },
+  "console": [],
+  "pageErrors": [],
+  "failedRequests": [],
+  "badResponses": [],
+  "ax": {
+    "desktop": {
+      "nodeCount": 649,
+      "ignoredCount": 99,
+      "unnamedInteractive": []
+    },
+    "mobile": {
+      "nodeCount": 664,
+      "ignoredCount": 99,
+      "unnamedInteractive": []
+    },
+    "narrow-mobile": {
+      "nodeCount": 701,
+      "ignoredCount": 99,
+      "unnamedInteractive": []
+    }
+  }
+}
