@@ -61,6 +61,10 @@ The authentic profile joined the new 11-member public group `Tesla Barrie & Simc
 
 Forums AVÉQ is an active Quebec electromobility forum with a dedicated EVSE/accessory section. Its rules prohibit spam and state that commercial signature links require prior approval; limited EV-related sale messages are tolerated, but that does not clearly authorize a referral resource. The official administrator contact form at <https://forums.aveq.ca/memberlist.php?mode=contactadmin> accepted a French request for permission to publish one conditions-first, fully disclosed Grizzl-E Club resource. The review link uses `?src=aveq-admin-review`. Do not register or post unless the administrator explicitly allows the referral link and identifies an acceptable section/formulation.
 
+## Electric Vehicle Society editorial gate — 2026-08-10
+
+Electric Vehicle Society has an active national `Owner Experience` category, including new owner stories published in July 2026. Its official contact form acknowledged an editorial pitch for “What Canadians should verify before joining a managed home-charging rewards program.” The proposed article would cover deposits, ownership/return, installation, connectivity, active-use, privacy and reward changes, with full member-compensation disclosure. The editor-review URL uses `?src=evsociety-editor-review`. Do not submit an article or referral resource-box link unless EV Society gives written approval and conditions. The source pages are <https://evsociety.ca/category/owner-experience/> and <https://evsociety.ca/contact/>.
+
 ## Facebook Marketplace is not eligible
 
 Do not create a Marketplace listing for this campaign. Meta says Marketplace commerce content is for attempts to buy, sell or trade products, and its prohibited-content list includes **“No Item for Sale.”** A member-referral landing page is not a specific item owned and sold by the poster.
