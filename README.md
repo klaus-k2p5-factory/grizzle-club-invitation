@@ -17,9 +17,7 @@ The form collects only the email address, explicit unchecked referral/privacy co
 python3 -m http.server 8080
 ```
 
-Rebuild the social preview card with `python assets/generate-og-card.py`. It requires
-Pillow plus the Noto Sans Display fonts normally installed under
-`/usr/share/fonts/truetype/noto/` on Debian/Ubuntu.
+Rebuild the social preview card with `python assets/generate-og-card.py`. The generator is verified with Pillow `12.3.0` and Debian/Ubuntu package `fonts-noto-core` (Noto Sans files under `/usr/share/fonts/truetype/noto/`). Install equivalent versions before rebuilding so text metrics and JPEG output remain reproducible.
 
 Transparent outreach copy, unique source links and moderator/admin request templates are in [`campaign/launch-kit.md`](campaign/launch-kit.md).
 
