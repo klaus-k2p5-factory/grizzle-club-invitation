@@ -33,6 +33,16 @@ Verified targets used for this check:
 
 Treat public search snippets as discovery evidence, not permission to post. Do not cold-post to the already-saturated groups above. Prefer approved posts aimed at new EV buyers/home-charger shoppers or underserved vehicle-owner communities.
 
+Live Facebook rule checks on 2026-08-09 also excluded these placements:
+
+- Ontario Electric Vehicle Owners & Enthusiasts: rule 2 explicitly prohibits vehicle and charging referral codes/links.
+- Waterloo Region Electric Vehicle Association: rule 3 prohibits promotions and self-promotional links.
+- Canadian Electric Vehicle (EV) Owners: rule 5 prohibits self-promotion, business advertising and spam links.
+- EV Charging Canada — Reward Programs: rule 3 explicitly prohibits referral solicitation, links, codes and referral-seeking private messages.
+- EVAAC: advertising is limited to approved sponsors/partners and the group requires an Atlantic Canada connection.
+
+The exact-audience private group `Canadian Home EV Charging Reward Programs` had 656 members and a pending membership request. Its member-only rules must be reviewed before any post. Electric Vehicle Society Barrie/Orillia was joined, but its admin-permission request is still pending; do not post there until approval arrives.
+
 ## Facebook Marketplace is not eligible
 
 Do not create a Marketplace listing for this campaign. Meta says Marketplace commerce content is for attempts to buy, sell or trade products, and its prohibited-content list includes **“No Item for Sale.”** A member-referral landing page is not a specific item owned and sold by the poster.
@@ -67,6 +77,12 @@ Suggested Facebook source URLs:
 - Other approved group: replace the suffix with `facebook-` plus a short group slug.
 
 ## Facebook Page launch post
+
+Live Page: <https://www.facebook.com/profile.php?id=61593364640663>
+
+Verified introductory post: <https://www.facebook.com/permalink.php?story_fbid=122093293149445488&id=1158289830711289>
+
+The Page action button uses `?src=facebook-page-cta`; the introductory post uses `?src=facebook-page-intro`.
 
 > **A Grizzl-E Club charger at $0 hardware purchase price — for eligible Canadian EV drivers**
 >
@@ -127,8 +143,8 @@ Suggested forum source URLs after moderator approval:
 ## First launch sequence
 
 1. Deploy and verify the new social preview card and Open Graph metadata.
-2. Through an authentic Facebook account, publish the Page/profile post and ask permission in one high-intent new-EV-buyer or vehicle-owner Group; do not use Marketplace.
-3. Do not duplicate the existing EV Society Barrie/Orillia, Ontario EV or r/EVCanada discussions.
+2. The authentic Facebook Page and introductory post are live. Monitor the exact-audience private-group membership request and the EV Society Barrie/Orillia admin-permission request; do not use Marketplace.
+3. Do not cold-post or duplicate the existing EV Society Barrie/Orillia, Ontario EV or r/EVCanada discussions. An explicit group-admin approval may override the EV Society hold for one disclosed post.
 4. Send a moderator request to the Tesla Motors Club Canada section, which showed no exact-match Grizzl-E Club result on 2026-08-09.
 5. Use other Reddit/forum communities only when a live, relevant question exists and current rules permit disclosed self-promotion.
 6. Publish only where approval is received, using a unique `src` link.
