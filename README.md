@@ -17,6 +17,12 @@ The form collects only the email address, explicit unchecked referral/privacy co
 python3 -m http.server 8080
 ```
 
+Rebuild the social preview card with `python assets/generate-og-card.py`. It requires
+Pillow plus the Noto Sans Display fonts normally installed under
+`/usr/share/fonts/truetype/noto/` on Debian/Ubuntu.
+
+Transparent outreach copy, unique source links and moderator/admin request templates are in [`campaign/launch-kit.md`](campaign/launch-kit.md).
+
 ## Deployment
 
 GitHub Pages deploys from the `main` branch root with HTTPS enforced.
