@@ -33,6 +33,16 @@ Verified targets used for this check:
 
 Treat public search snippets as discovery evidence, not permission to post. Do not cold-post to the already-saturated groups above. Prefer approved posts aimed at new EV buyers/home-charger shoppers or underserved vehicle-owner communities.
 
+## Tesla Motors Club permission gate — 2026-08-10
+
+TMC remains comparatively underserved, but its live rules explicitly classify affiliate links, referral links and links posted for financial benefit as advertising. Its advertising policy prohibits linking to an affiliated external site in public forums without prior approval and directs promotion requests to TMC management.
+
+- Forum rules: <https://teslamotorsclub.com/tmc/threads/forum-rules.23996/>
+- Advertising policy: <https://teslamotorsclub.com/tmc/threads/advertising-policy.23301/>
+- A management permission request was emailed to `SupportTMC@teslamotorsclub.com` on 2026-08-10. It disclosed the referral compensation, supplied a moderator-preview link and promised one post only, with no cold messages, bumps, cross-posting or Marketplace use.
+- No TMC account or campaign post exists. Do not register or post unless management gives explicit written approval and any stated conditions are satisfied.
+- The exact Gmail thread is monitored every six hours for seven days by the silent script-only job `TMC referral permission reply monitor`.
+
 Live Facebook rule checks on 2026-08-09 also excluded these placements:
 
 - Ontario Electric Vehicle Owners & Enthusiasts: rule 2 explicitly prohibits vehicle and charging referral codes/links.
@@ -145,7 +155,7 @@ Suggested forum source URLs after moderator approval:
 1. Deploy and verify the new social preview card and Open Graph metadata.
 2. The authentic Facebook Page and introductory post are live. Monitor the exact-audience private-group membership request and the EV Society Barrie/Orillia admin-permission request; do not use Marketplace.
 3. Do not cold-post or duplicate the existing EV Society Barrie/Orillia, Ontario EV or r/EVCanada discussions. An explicit group-admin approval may override the EV Society hold for one disclosed post.
-4. Send a moderator request to the Tesla Motors Club Canada section, which showed no exact-match Grizzl-E Club result on 2026-08-09.
+4. The Tesla Motors Club management request was sent on 2026-08-10. Await explicit written approval; do not create an account or post while it is pending.
 5. Use other Reddit/forum communities only when a live, relevant question exists and current rules permit disclosed self-promotion.
 6. Publish only where approval is received, using a unique `src` link.
 7. Reply to genuine questions helpfully; do not bump or repost on a fixed schedule unless rules allow it.
