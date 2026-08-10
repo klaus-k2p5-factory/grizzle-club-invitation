@@ -26,3 +26,5 @@ Transparent outreach copy, unique source links and moderator/admin request templ
 ## Deployment
 
 GitHub Pages deploys from the `main` branch root with HTTPS enforced.
+The `google49a0907ec3fef867.html` ownership file must remain published for
+Google Search Console verification.
