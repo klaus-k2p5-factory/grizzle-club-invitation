@@ -55,6 +55,12 @@ The exact-audience private group `Canadian Home EV Charging Reward Programs` had
 
 The authentic profile joined the new 11-member public group `Tesla Barrie & Simcoe county` on 2026-08-10. It is hyperlocal and comparatively underserved, but its About page displayed no promotion/referral rule. A link-free permission request was sent to admin Hristo Momchilov with the compensation and material-condition disclosures. Use `?src=facebook-tesla-barrie-simcoe` only after explicit approval; no post exists while permission is pending.
 
+`New Brunswick EV Owners` (group `745634935629157`) is a 4.7K-member public group whose live rule 3 states: “Any commercial posts should be relevant, reasonable, and limited to 2 per week.” The authentic profile joined and submitted the required first-participation review on 2026-08-10; participation remains pending. Search showed several existing Grizzl-E discussions, so a generic standalone post would add noise. If approved, re-check the rules and reply once to Jason Cleveland's current Grizzl-E Mini/other-reward-program question using a factual answer grounded in the June 10, 2026 Club terms, full compensation disclosure, and `?src=facebook-nb-jason-grizzle-mini`. Do not post if the thread becomes stale or a Peter Mucha reply already exists.
+
+## Forums AVÉQ permission gate — 2026-08-10
+
+Forums AVÉQ is an active Quebec electromobility forum with a dedicated EVSE/accessory section. Its rules prohibit spam and state that commercial signature links require prior approval; limited EV-related sale messages are tolerated, but that does not clearly authorize a referral resource. The official administrator contact form at <https://forums.aveq.ca/memberlist.php?mode=contactadmin> accepted a French request for permission to publish one conditions-first, fully disclosed Grizzl-E Club resource. The review link uses `?src=aveq-admin-review`. Do not register or post unless the administrator explicitly allows the referral link and identifies an acceptable section/formulation.
+
 ## Facebook Marketplace is not eligible
 
 Do not create a Marketplace listing for this campaign. Meta says Marketplace commerce content is for attempts to buy, sell or trade products, and its prohibited-content list includes **“No Item for Sale.”** A member-referral landing page is not a specific item owned and sold by the poster.
