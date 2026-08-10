@@ -53,6 +53,8 @@ Live Facebook rule checks on 2026-08-09 also excluded these placements:
 
 The exact-audience private group `Canadian Home EV Charging Reward Programs` had 656 members and a pending membership request. Its member-only rules must be reviewed before any post. Electric Vehicle Society Barrie/Orillia was joined, but its admin-permission request is still pending; do not post there until approval arrives.
 
+The authentic profile joined the new 11-member public group `Tesla Barrie & Simcoe county` on 2026-08-10. It is hyperlocal and comparatively underserved, but its About page displayed no promotion/referral rule. A link-free permission request was sent to admin Hristo Momchilov with the compensation and material-condition disclosures. Use `?src=facebook-tesla-barrie-simcoe` only after explicit approval; no post exists while permission is pending.
+
 ## Facebook Marketplace is not eligible
 
 Do not create a Marketplace listing for this campaign. Meta says Marketplace commerce content is for attempts to buy, sell or trade products, and its prohibited-content list includes **“No Item for Sale.”** A member-referral landing page is not a specific item owned and sold by the poster.
