@@ -24,6 +24,8 @@ It compares Grizzl-E Club and ChargeLab Rewards using the June 10, 2026 official
 
 The homepage cross-links the guide and `sitemap.xml` includes it with `lastmod` 2026-08-11. The public IndexNow key file is `2b9d2abe20f093f01c769beb45e4db8f.txt`. The first official API POST for the homepage and canonical guide URL returned `202 Accepted` on 2026-08-11, which confirms receipt but not indexing. Re-submit only after a material public-content change.
 
+Google Search Console URL Inspection reported the comparison guide as “URL is not on Google” on 2026-08-11. A single request then returned “Indexing requested” and added the guide to Google’s priority crawl queue. That is a crawl request, not proof of crawling, indexing, impressions or ranking; do not repeatedly request indexing.
+
 ## Saturation check — 2026-08-09
 
 The core general-Canadian EV communities already discuss this program heavily:
@@ -103,7 +105,13 @@ A verified no-fee pitch proposed a balanced 500–700-word article, “What Cana
 
 Plug'n Drive's current <https://www.plugndrive.ca/evs-are-for-everyone> tour describes sales-free, neutral and evidence-based EV education, including home charging, through national roadshows and Mobile EV Education Trailers. Its <https://www.plugndrive.ca/ev-owners-club> page also maintains a national EV Owners Club and regional-club directory. The official contact route is <https://www.plugndrive.ca/contact>.
 
-A verified email asked whether the independent conditions checklist could be reviewed as a no-fee, clearly labelled resource-page or EV Owners Club item, or optional background material for ambassadors. It used `?src=plugndrive-resource-review`, disclosed Peter's potential CA$0.01-per-eligible-kWh benefit and Ontario location, and explicitly did not request event distribution or endorsement without approval. Await written acceptance and exact-copy approval; if accepted, use `?src=plugndrive-resource` for the verified public placement.
+A verified email asked whether the independent conditions checklist could be reviewed as a no-fee, clearly labelled resource-page or EV Owners Club item, or optional background material for ambassadors. It used `?src=plugndrive-resource-review`, disclosed Peter's potential CA$0.01-per-eligible-kWh benefit and Ontario location, and explicitly did not request event distribution or endorsement without approval. Await written acceptance and exact-copy approval; if accepted, use `?src=plugndrive-resource` for the public URL.
+
+## National Drive Electric Month Waterloo gate — 2026-08-11
+
+The official event page for National Drive Electric Month Waterloo 2026 invites EV owners, non-profits, utilities and companies to contact the WREVA organizer. The event is scheduled for October 3, 2026 at The Boardwalk in Waterloo. This event route is distinct from WREVA's public Facebook group, where promotions remain prohibited.
+
+The event-specific contact form confirmed delivery of one request asking whether the organizer would approve the comparison guide as a no-fee, clearly labelled attendee-resource link or QR. The request used `?src=ndem-waterloo-organizer-review`, disclosed Peter's possible CA$0.01-per-eligible-referred-kWh benefit, and explicitly rejected sponsorship, exhibitor status, attendee data, registrant access and implied WREVA/NDEM endorsement. Await explicit written permission and placement/disclaimer instructions. If approved, use the separate public source `?src=ndem-waterloo-event-resource`; do not contact event registrants or treat the form receipt as approval.
 
 ## Facebook Marketplace is not eligible
 
