@@ -89,6 +89,12 @@ The Electric Vehicle Association of Alberta published its Summer 2026 newsletter
 
 A verified no-fee pitch proposed a balanced 500–700-word article, “What Canadian EV owners should verify before choosing a managed home-charging rewards program.” The email disclosed Peter's Ontario—not Alberta—location, the member-compensation relationship, the proposed `?src=evaa-editor-review` resource-box URL, and asked EVAA to decline if it requires Alberta-resident owner stories. Do not submit the article or include a referral link until EVAA explicitly approves both. If only the article is accepted, treat it as awareness rather than acquisition.
 
+## Plug'n Drive educational-resource gate — 2026-08-11
+
+Plug'n Drive's current <https://www.plugndrive.ca/evs-are-for-everyone> tour describes sales-free, neutral and evidence-based EV education, including home charging, through national roadshows and Mobile EV Education Trailers. Its <https://www.plugndrive.ca/ev-owners-club> page also maintains a national EV Owners Club and regional-club directory. The official contact route is <https://www.plugndrive.ca/contact>.
+
+A verified email asked whether the independent conditions checklist could be reviewed as a no-fee, clearly labelled resource-page or EV Owners Club item, or optional background material for ambassadors. It used `?src=plugndrive-resource-review`, disclosed Peter's potential CA$0.01-per-eligible-kWh benefit and Ontario location, and explicitly did not request event distribution or endorsement without approval. Await written acceptance and exact-copy approval; if accepted, use `?src=plugndrive-resource` for the verified public placement.
+
 ## Facebook Marketplace is not eligible
 
 Do not create a Marketplace listing for this campaign. Meta says Marketplace commerce content is for attempts to buy, sell or trade products, and its prohibited-content list includes **“No Item for Sale.”** A member-referral landing page is not a specific item owned and sold by the poster.
