@@ -130,6 +130,12 @@ Verified introductory post: <https://www.facebook.com/permalink.php?story_fbid=1
 
 The Page action button uses `?src=facebook-page-cta`; the introductory post uses `?src=facebook-page-intro`.
 
+### Conditions-first comparison post — 2026-08-11
+
+The Page published a second public post explaining that Canadians should compare total program commitments—not only headline cents per kWh. Its checklist covers compatible hardware/OCPP, deposit and shipping, installation and panel costs, ownership, connectivity and active-use rules, cancellation/return conditions, and reward-payment terms. It uses `?src=facebook-page-comparison` and includes the independent-page and CA$0.01-per-eligible-kWh member-benefit disclosures.
+
+Verified permalink: <https://www.facebook.com/permalink.php?story_fbid=122094167769445488&id=1158289830711289>
+
 > **A Grizzl-E Club charger at $0 hardware purchase price — for eligible Canadian EV drivers**
 >
 > Approved Club members can access a connected Level 2 charger and earn cash rewards on eligible recorded home charging. Before requesting an invitation, review the real obligations: refundable deposit, shipping, installation/electrical work, reliable Wi-Fi/data, active primary use, and charger ownership/return conditions.
