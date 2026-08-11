@@ -65,6 +65,14 @@ Forums AVÉQ is an active Quebec electromobility forum with a dedicated EVSE/acc
 
 Electric Vehicle Society has an active national `Owner Experience` category, including new owner stories published in July 2026. Its official contact form acknowledged an editorial pitch for “What Canadians should verify before joining a managed home-charging rewards program.” The proposed article would cover deposits, ownership/return, installation, connectivity, active-use, privacy and reward changes, with full member-compensation disclosure. The editor-review URL uses `?src=evsociety-editor-review`. Do not submit an article or referral resource-box link unless EV Society gives written approval and conditions. The source pages are <https://evsociety.ca/category/owner-experience/> and <https://evsociety.ca/contact/>.
 
+## Chevy Equinox EV Group permission gate — 2026-08-11
+
+The restored web-search extractor found a current exact-intent question from a Canadian in the Maritimes asking which Level 2 charger to choose and whether charging-credit programs make sense: <https://www.facebook.com/groups/equinoxev/posts/4164776303812362>. The authentic profile joined the 26.6K-member public `Chevy Equinox EV Group`.
+
+The Facebook About page displays no promotion/referral rule. The group is administered by the `Chevy Equinox EV Forum` Page, and the current linked EquinoxEVForum.com Terms state that users may not publish affiliate marketing, referral-code content or unsolicited commercial advertising and may not advertise or solicit without express written approval. Because those terms create an explicit permission gate, no reply was posted.
+
+The official VerticalScope contact form at <https://www.equinoxevforum.com/help/contact/> accepted a written request for permission to make one conditions-first, fully disclosed reply to that exact Facebook post. The review URL uses `?src=equinoxev-admin-review`. If approval arrives, re-check the live group rules, follow every stated condition, reply once with `?src=facebook-equinox-maritimes-level2`, verify the canonical reply URL and do not cross-post or cold-message anyone.
+
 ## Facebook Marketplace is not eligible
 
 Do not create a Marketplace listing for this campaign. Meta says Marketplace commerce content is for attempts to buy, sell or trade products, and its prohibited-content list includes **“No Item for Sale.”** A member-referral landing page is not a specific item owned and sold by the poster.
