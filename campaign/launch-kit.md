@@ -22,7 +22,7 @@ The site now includes a crawlable, terms-based guide at:
 
 It compares Grizzl-E Club and ChargeLab Rewards using the June 10, 2026 official Club terms and ChargeLab's July 1, 2026 Canada terms. It distinguishes supplied hardware from owner-supplied OCPP hardware, identifies ownership, connection, payout, active-use, carbon-credit and exit conditions, links to first-party sources, and repeats the member-benefit disclosure above both the editorial content and Grizzl-E call to action. The internal invitation CTA uses `?src=organic-comparison`; do not reuse that source for social posts or third-party placements.
 
-The homepage cross-links the guide and `sitemap.xml` includes it with `lastmod` 2026-08-11. The public IndexNow key file is `2b9d2abe20f093f01c769beb45e4db8f.txt`; submit the canonical guide URL only after verifying that both the page and key file are live.
+The homepage cross-links the guide and `sitemap.xml` includes it with `lastmod` 2026-08-11. The public IndexNow key file is `2b9d2abe20f093f01c769beb45e4db8f.txt`. The first official API POST for the homepage and canonical guide URL returned `202 Accepted` on 2026-08-11, which confirms receipt but not indexing. Re-submit only after a material public-content change.
 
 ## Saturation check — 2026-08-09
 
