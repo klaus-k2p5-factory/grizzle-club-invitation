@@ -83,6 +83,12 @@ ManitobaEV's current <https://manitobaev.ca/ev-links> page explicitly invites re
 
 A verified email was sent to `info@manitobaev.ca` proposing a no-fee listing titled “Grizzl-E Club Canada — independent eligibility and conditions checklist,” with a neutral description, the review URL `?src=manitobaev-links-review`, full compensation disclosure, and an explicit request to decline rather than hide the disclosure or require sponsorship. The general link invitation is not approval for a financially beneficial referral. Await written acceptance; if approved, use `?src=manitobaev-ev-links` for the public directory URL and verify the resulting link and description.
 
+## EVAA editorial gate — 2026-08-11
+
+The Electric Vehicle Association of Alberta published its Summer 2026 newsletter on July 1, while its public <https://albertaev.ca/ev-reviews> index has no entry newer than June 2022. Its official <https://albertaev.ca/contact-us> page lists `info@albertaev.ca`.
+
+A verified no-fee pitch proposed a balanced 500–700-word article, “What Canadian EV owners should verify before choosing a managed home-charging rewards program.” The email disclosed Peter's Ontario—not Alberta—location, the member-compensation relationship, the proposed `?src=evaa-editor-review` resource-box URL, and asked EVAA to decline if it requires Alberta-resident owner stories. Do not submit the article or include a referral link until EVAA explicitly approves both. If only the article is accepted, treat it as awareness rather than acquisition.
+
 ## Facebook Marketplace is not eligible
 
 Do not create a Marketplace listing for this campaign. Meta says Marketplace commerce content is for attempts to buy, sell or trade products, and its prohibited-content list includes **“No Item for Sale.”** A member-referral landing page is not a specific item owned and sold by the poster.
