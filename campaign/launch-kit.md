@@ -33,6 +33,8 @@ Verified targets used for this check:
 
 Treat public search snippets as discovery evidence, not permission to post. Do not cold-post to the already-saturated groups above. Prefer approved posts aimed at new EV buyers/home-charger shoppers or underserved vehicle-owner communities.
 
+A restored-extractor follow-up on 2026-08-11 directly opened additional exact-looking Facebook candidates but rejected them rather than forcing placements: Cadillac Lyriq Owners Group was about 25 weeks old; Ford Mach-E Owners Canada was about 15 weeks old and already had 23 replies; EVAAC was about seven weeks old and contained multiple negative/competitor responses; and EVAA's July 24 thread already had 34 comments, an existing Grizzl-E referral offer and an update that the buyer had ordered a charger. None qualified for a new reply.
+
 ## Tesla Motors Club permission gate — 2026-08-10
 
 TMC remains comparatively underserved, but its live rules explicitly classify affiliate links, referral links and links posted for financial benefit as advertising. Its advertising policy prohibits linking to an affiliated external site in public forums without prior approval and directs promotion requests to TMC management.
@@ -74,6 +76,12 @@ The restored web-search extractor found a current exact-intent question from a C
 The Facebook About page displays no promotion/referral rule. The group is administered by the `Chevy Equinox EV Forum` Page, and the current linked EquinoxEVForum.com Terms state that users may not publish affiliate marketing, referral-code content or unsolicited commercial advertising and may not advertise or solicit without express written approval. Because those terms create an explicit permission gate, no reply was posted.
 
 The official VerticalScope contact form at <https://www.equinoxevforum.com/help/contact/> accepted a written request for permission to make one conditions-first, fully disclosed reply to that exact Facebook post. The review URL uses `?src=equinoxev-admin-review`. If approval arrives, re-check the live group rules, follow every stated condition, reply once with `?src=facebook-equinox-maritimes-level2`, verify the canonical reply URL and do not cross-post or cold-message anyone.
+
+## ManitobaEV EV Links directory gate — 2026-08-11
+
+ManitobaEV's current <https://manitobaev.ca/ev-links> page explicitly invites readers to email suggested EV resources. Its charging section lists route planners, adapters, PlugShare, ChargeHub and Sun Country Highway but no comparable Canadian home-charging reward-program conditions checklist. ManitobaEV's homepage also names EasyEV as its preferred charger installer, so a disclosed referral resource requires an explicit conflict/permission check.
+
+A verified email was sent to `info@manitobaev.ca` proposing a no-fee listing titled “Grizzl-E Club Canada — independent eligibility and conditions checklist,” with a neutral description, the review URL `?src=manitobaev-links-review`, full compensation disclosure, and an explicit request to decline rather than hide the disclosure or require sponsorship. The general link invitation is not approval for a financially beneficial referral. Await written acceptance; if approved, use `?src=manitobaev-ev-links` for the public directory URL and verify the resulting link and description.
 
 ## Facebook Marketplace is not eligible
 
