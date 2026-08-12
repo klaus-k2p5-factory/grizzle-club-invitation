@@ -50,6 +50,28 @@ test('refundable deposit affects upfront cash but not non-refundable cost', () =
   assert.equal(result.firstYearNonRefundableCost, 0);
 });
 
+test('out-of-range finite inputs cannot overflow calculator results', () => {
+  const result = calculateFirstYearCost({
+    annualKm: '1e308',
+    kwhPer100Km: '1e308',
+    electricityRate: '1e308',
+    hardwareCost: '1e308',
+    shippingCost: '1e308',
+    installationCost: '1e308',
+    maintenanceReserve: '1e308',
+    programFees: '1e308',
+    refundableDeposit: '1e308',
+    rewardRate: '1e308',
+    rebateAmount: '1e308',
+    rebateConfirmed: true
+  });
+
+  for (const [name, value] of Object.entries(result)) {
+    assert.ok(Number.isFinite(value), `${name} must remain finite`);
+  }
+  assert.equal(result.annualKwh, 200000);
+});
+
 test('invalid and negative inputs cannot create fabricated savings or costs', () => {
   const result = calculateFirstYearCost({
     annualKm: -100,
