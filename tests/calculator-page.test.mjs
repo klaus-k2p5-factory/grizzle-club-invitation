@@ -34,8 +34,8 @@ test('calculator page exposes labelled inputs and live results without collectin
   assert.match(html, /id="net-result"/);
   assert.match(html, /id="electricity-result"/);
   assert.match(html, /id="offset-result"/);
-  assert.match(html, /\.\.\/calculator-core\.js/);
-  assert.match(html, /\.\.\/calculator\.js/);
+  assert.match(html, /\.\.\/calculator-core\.js\?v=20260811-2/);
+  assert.match(html, /\.\.\/calculator\.js\?v=20260811-2/);
   assert.doesNotMatch(html, /<form[^>]+action=/);
   assert.doesNotMatch(html, /name="(?:email|address|postal|utility-account)"/i);
 });
