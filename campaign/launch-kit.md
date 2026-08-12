@@ -180,6 +180,14 @@ Verified Reel: <https://www.facebook.com/reel/1623553812534787>
 
 Do not publish a duplicate Reel.
 
+### EVCO companion-calculator permission request — 2026-08-12
+
+EVCO's live `Get paid to charge your EV at home` article is a current Canadian comparison of home-charging reward programs and already explains Grizzl-E's referral economics. Its official contact form accepted one request to review the independent first-year-cost calculator as a no-fee, clearly labelled companion link.
+
+The request used `?src=evco-editor-review`; disclosed Peter's current Club membership and potential CA$0.01-per-eligible-kWh benefit; summarized the approval, deposit, shipping, installation, Wi-Fi/data, active-use and ownership/return conditions; and asked EVCO to decline if membership, sponsorship or a fee is required. The form confirmed: `Thank you for your message. It has been sent.`
+
+This is only a permission request. Do not claim an EVCO placement or endorsement, and do not follow up with publication unless EVCO approves the exact URL, wording and adjacent disclosure in writing.
+
 > **A Grizzl-E Club charger at $0 hardware purchase price — for eligible Canadian EV drivers**
 >
 > Approved Club members can access a connected Level 2 charger and earn cash rewards on eligible recorded home charging. Before requesting an invitation, review the real obligations: refundable deposit, shipping, installation/electrical work, reliable Wi-Fi/data, active primary use, and charger ownership/return conditions.
