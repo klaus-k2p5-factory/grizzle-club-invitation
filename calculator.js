@@ -5,6 +5,11 @@
   const calculate = globalThis.EvCostCalculator?.calculateFirstYearCost;
   if (!form || !calculate) return;
 
+  const params = new URLSearchParams(window.location.search);
+  const campaign = (params.get('src') || 'organic-cost-calculator').replace(/[^a-zA-Z0-9_.-]/g, '').slice(0, 60) || 'organic-cost-calculator';
+  const invitationLink = document.querySelector('#invitation-path-link');
+  if (invitationLink) invitationLink.href = `../?src=${campaign}#request`;
+
   const byId = (id) => document.querySelector(`#${id}`);
   const fields = {
     scenario: byId('scenario'),

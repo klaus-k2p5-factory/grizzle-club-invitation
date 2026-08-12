@@ -69,8 +69,17 @@ test('calculator is integrated into home, comparison and sitemap with distinct s
   assert.match(sitemap, /ev-charger-cost-calculator-canada\//);
 
   const calculator = await read('ev-charger-cost-calculator-canada/index.html');
-  assert.match(calculator, /\.\.\/\?src=organic-cost-calculator#request/);
+  assert.match(calculator, /id="invitation-path-link"[^>]+href="\.\.\/\?src=organic-cost-calculator#request"/);
   assert.doesNotMatch(calculator, /src=organic-comparison#request/);
+});
+
+test('calculator preserves a safe inbound campaign source through its invitation CTA', async () => {
+  const script = await read('calculator.js');
+  assert.match(script, /new URLSearchParams\(window\.location\.search\)/);
+  assert.match(script, /params\.get\('src'\)/);
+  assert.match(script, /replace\(\/\[\^a-zA-Z0-9_.-\]\/g, ''\)\.slice\(0, 60\)/);
+  assert.match(script, /invitationLink\.href = `\.\.\/\?src=\$\{campaign\}#request`/);
+  assert.match(script, /organic-cost-calculator/);
 });
 
 test('calculator browser script avoids storage, tracking and network submission', async () => {
