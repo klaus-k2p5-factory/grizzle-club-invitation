@@ -14,6 +14,7 @@
   const fields = {
     scenario: byId('scenario'),
     annualKm: byId('annual-km'),
+    homeChargingShare: byId('home-share'),
     kwhPer100Km: byId('efficiency'),
     electricityRate: byId('electricity-rate'),
     hardwareCost: byId('hardware-cost'),
@@ -31,12 +32,16 @@
     scenario: byId('result-scenario'),
     net: byId('net-result'),
     monthly: byId('monthly-result'),
+    monthlyElectricity: byId('monthly-electricity-result'),
+    explanation: byId('result-explanation'),
     upfront: byId('upfront-result'),
     electricity: byId('electricity-result'),
     offsets: byId('offset-result'),
     energy: byId('energy-result'),
     deposit: byId('deposit-result'),
-    rebateStatus: byId('rebate-status')
+    rebateStatus: byId('rebate-status'),
+    offsetsRow: byId('result-offset-row'),
+    depositRow: byId('result-deposit-row')
   };
 
   const money = new Intl.NumberFormat('en-CA', {
@@ -54,9 +59,10 @@
   };
   let rewardRateAutoSuggested = false;
   let rewardRateUserEdited = false;
+  let buyHardwareValue = fields.hardwareCost.value;
 
   const readInput = () => ({
-    annualKm: fields.annualKm.value,
+    annualKm: Number(fields.annualKm.value) * Number(fields.homeChargingShare.value) / 100,
     kwhPer100Km: fields.kwhPer100Km.value,
     electricityRate: fields.electricityRate.value,
     hardwareCost: fields.hardwareCost.value,
@@ -75,7 +81,7 @@
     const help = byId('scenario-help');
     const hardwareHelp = byId('hardware-help');
 
-    fields.hardwareCost.disabled = scenario === 'supplied';
+    fields.hardwareCost.disabled = scenario !== 'buy';
     if (scenario === 'supplied') {
       fields.hardwareCost.value = '0';
       if (Number(fields.rewardRate.value) === 0 && !rewardRateUserEdited) {
@@ -90,11 +96,13 @@
     }
 
     if (scenario === 'own') {
-      help.textContent = 'Keep hardware at $0 if it is already paid for, or enter a planned replacement or upgrade.';
-      hardwareHelp.textContent = 'Use $0 for sunk cost, or enter a replacement/upgrade amount.';
+      fields.hardwareCost.value = '0';
+      help.textContent = 'The charger price is set to $0 because it is already paid for.';
+      hardwareHelp.textContent = 'Already-owned hardware is not counted again.';
     } else if (scenario === 'buy') {
-      help.textContent = 'Enter the hardware price you expect to pay.';
-      hardwareHelp.textContent = 'Enter purchase price before any rebate.';
+      fields.hardwareCost.value = buyHardwareValue || '700';
+      help.textContent = 'The sample assumes you buy a charger.';
+      hardwareHelp.textContent = 'Sample: $700. A planning number only—replace it with the charger price you find.';
     }
   };
 
@@ -103,18 +111,25 @@
     const scenario = fields.scenario.value;
     output.scenario.textContent = scenarioLabels[scenario];
     output.net.textContent = money.format(result.firstYearNonRefundableCost);
-    output.monthly.textContent = `${money.format(result.averageMonthlyCost)} average per month`;
+    output.monthly.textContent = `${money.format(result.upfrontCashRequired)} upfront + about ${money.format(result.electricityCost / 12)}/month electricity`;
     output.upfront.textContent = money.format(result.upfrontCashRequired);
+    output.monthlyElectricity.textContent = money.format(result.electricityCost / 12);
     output.electricity.textContent = money.format(result.electricityCost);
     output.offsets.textContent = money.format(result.totalOffsets);
     output.energy.textContent = `${energy.format(result.annualKwh)} kWh`;
     output.deposit.textContent = money.format(Number(fields.refundableDeposit.value) || 0);
+    output.explanation.textContent = `Based on ${energy.format(Number(fields.annualKm.value) || 0)} km driven per year, ${fields.homeChargingShare.value}% charged at home, ${fields.kwhPer100Km.value || 0} kWh/100 km and ${money.format(Number(fields.electricityRate.value) || 0)} per kWh.`;
+    output.offsetsRow.hidden = result.totalOffsets === 0;
+    output.depositRow.hidden = Number(fields.refundableDeposit.value) <= 0;
 
     if (result.potentialRebate > 0 && !fields.rebateConfirmed.checked) {
+      output.rebateStatus.hidden = false;
       output.rebateStatus.textContent = `${money.format(result.potentialRebate)} potential rebate is visible but not subtracted because confirmation is unchecked.`;
     } else if (result.appliedRebate > 0) {
+      output.rebateStatus.hidden = false;
       output.rebateStatus.textContent = `${money.format(result.appliedRebate)} confirmed rebate is included. Re-check eligibility before committing to work.`;
     } else {
+      output.rebateStatus.hidden = true;
       output.rebateStatus.textContent = 'No rebate is included unless you confirm it above.';
     }
   };
@@ -129,6 +144,9 @@
     rewardRateUserEdited = true;
     rewardRateAutoSuggested = false;
   });
+  fields.hardwareCost.addEventListener('input', () => {
+    if (fields.scenario.value === 'buy') buyHardwareValue = fields.hardwareCost.value;
+  });
   form.addEventListener('input', queueRender);
   fields.scenario.addEventListener('change', () => {
     updateScenario();
@@ -139,6 +157,7 @@
   form.addEventListener('reset', () => {
     rewardRateUserEdited = false;
     rewardRateAutoSuggested = false;
+    buyHardwareValue = '700';
     setTimeout(() => {
       updateScenario();
       render();

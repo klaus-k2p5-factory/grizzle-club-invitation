@@ -11,8 +11,10 @@ test('calculator page has truthful SEO, disclosure and structured data', async (
   const html = await read('ev-charger-cost-calculator-canada/index.html');
   assert.match(html, /<html lang="en-CA">/);
   assert.match(html, /<title>EV Charger Cost Calculator Canada \| First-Year Total<\/title>/);
+  assert.match(html, /<meta name="description" content="Estimate a ballpark first-year home EV charging cost in Canada/);
+  assert.doesNotMatch(html, /Calculate your real first-year home EV charging cost/);
   assert.match(html, /<link rel="canonical" href="https:\/\/klaus-k2p5-factory\.github\.io\/grizzle-club-invitation\/ev-charger-cost-calculator-canada\/">/);
-  assert.match(html, /<h1>How much will a home EV charger really cost in Canada in year one\?<\/h1>/);
+  assert.match(html, /<h1>What could home EV charging cost in your first year\?<\/h1>/);
   assert.match(html, /CAD \$0\.01 per eligible referred kWh/);
   assert.match(html, /not (?:the )?(?:official )?Grizzl-E, United Chargers or Government of Canada/i);
   assert.match(html, /<meta property="og:image" content="https:\/\/klaus-k2p5-factory\.github\.io\/grizzle-club-invitation\/assets\/og-ev-charger-cost-calculator\.jpg">/);
@@ -20,6 +22,7 @@ test('calculator page has truthful SEO, disclosure and structured data', async (
   assert.match(html, /<meta property="og:image:height" content="630">/);
   assert.match(html, /<meta property="og:image:alt" content="Canadian first-year EV charger cost calculator showing hardware, installation, electricity, rebates and rewards">/);
   assert.match(html, /<meta name="twitter:card" content="summary_large_image">/);
+  assert.match(html, /\.\.\/styles\.css\?v=20260811-3/);
   assert.match(html, /"@type": "WebApplication"/);
   assert.match(html, /"@type": "Article"/);
   assert.doesNotMatch(html, /aggregateRating|reviewRating|priceCurrency/);
@@ -28,7 +31,7 @@ test('calculator page has truthful SEO, disclosure and structured data', async (
 test('calculator page exposes labelled inputs and live results without collecting data', async () => {
   const html = await read('ev-charger-cost-calculator-canada/index.html');
   for (const id of [
-    'scenario', 'annual-km', 'efficiency', 'electricity-rate', 'hardware-cost',
+    'scenario', 'annual-km', 'home-share', 'efficiency', 'electricity-rate', 'hardware-cost',
     'shipping-cost', 'installation-cost', 'maintenance-reserve', 'program-fees',
     'deposit', 'reward-rate', 'rebate-amount', 'rebate-confirmed'
   ]) {
@@ -39,25 +42,45 @@ test('calculator page exposes labelled inputs and live results without collectin
   assert.match(html, /id="net-result"/);
   assert.match(html, /id="electricity-result"/);
   assert.match(html, /id="offset-result"/);
-  assert.match(html, /\.\.\/calculator-core\.js\?v=20260811-2/);
-  assert.match(html, /\.\.\/calculator\.js\?v=20260811-2/);
+  assert.match(html, /\.\.\/calculator-core\.js\?v=20260811-3/);
+  assert.match(html, /\.\.\/calculator\.js\?v=20260811-3/);
   assert.doesNotMatch(html, /<form[^>]+action=/);
   assert.doesNotMatch(html, /name="(?:email|address|postal|utility-account)"/i);
 });
 
-test('energy and reward estimates use kilometres charged through the home charger', async () => {
+test('calculator opens with a simple explained Canadian starter example', async () => {
   const html = await read('ev-charger-cost-calculator-canada/index.html');
-  assert.match(html, /Annual kilometres charged at home/);
-  assert.match(html, /not total driving unless every kilometre is charged here/i);
-  assert.match(html, /Home-charging energy from the wall/);
-  assert.match(html, /Include charging losses/i);
-  assert.match(html, /annual kilometres charged at home × vehicle kWh\/100 km ÷ 100/i);
-  assert.doesNotMatch(html, /<span>Annual driving <b>km\/year<\/b><\/span>/);
+  assert.match(html, /A starter example is already filled in/);
+  assert.match(html, /id="annual-km"[^>]+value="15000"/);
+  assert.match(html, /13,261 km for cars and 15,180 km for light trucks/);
+  assert.match(html, /Natural Resources Canada/i);
+  assert.match(html, /id="home-share"/);
+  assert.match(html, /<option value="80" selected>Most \(80%\)<\/option>/);
+  assert.match(html, /4 out of every 5 kilometres/i);
+  assert.match(html, /id="hardware-cost"[^>]+value="700"/);
+  assert.match(html, /id="installation-cost"[^>]+value="1500"/);
+  assert.match(html, /id="efficiency"[^>]+value="20"/);
+  assert.match(html, /id="electricity-rate"[^>]+value="0\.15"/);
+  assert.match(html, /<details class="calculator-advanced">/);
+  assert.match(html, /Fine-tune the estimate \(optional\)/);
+  assert.doesNotMatch(html, /<legend>2\. Estimate annual home charging<\/legend>/);
+  assert.doesNotMatch(html, /<legend>3\. Enter setup and year-one costs<\/legend>/);
+  assert.doesNotMatch(html, /<legend>4\. Add only supportable offsets<\/legend>/);
+  assert.doesNotMatch(html, /Installation, permit and upgrades/);
+  assert.match(html, /enter it as part of your/i);
+});
+
+test('simple annual driving and home share become kilometres charged at home', async () => {
+  const script = await read('calculator.js');
+  assert.match(script, /homeChargingShare: byId\('home-share'\)/);
+  assert.match(script, /annualKm: Number\(fields\.annualKm\.value\) \* Number\(fields\.homeChargingShare\.value\) \/ 100/);
+  assert.match(script, /output\.monthlyElectricity\.textContent/);
+  assert.match(script, /output\.explanation\.textContent/);
 });
 
 test('offset labels distinguish a potential rebate from estimated rewards', async () => {
   const html = await read('ev-charger-cost-calculator-canada/index.html');
-  assert.match(html, /Potential rebate or incentive/);
+  assert.match(html, /Potential rebate/);
   assert.match(html, /Rebate \+ estimated rewards/);
   assert.doesNotMatch(html, />Confirmed offsets</);
   assert.doesNotMatch(html, />Confirmed rebate or incentive/);
