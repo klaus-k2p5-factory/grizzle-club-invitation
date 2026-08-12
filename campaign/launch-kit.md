@@ -170,6 +170,16 @@ Verified permalink: <https://www.facebook.com/permalink.php?story_fbid=122094866
 
 Do not rerun the completed one-shot job or publish a duplicate calculator post.
 
+### Calculator Reel — 2026-08-12
+
+The owned Page published one silent 15-second vertical Reel explaining the calculator's rounded starter inputs and year-one result. The source asset is reproducible with `assets/generate-facebook-calculator-reel.py`; production output was verified as H.264, 1080×1920, 30 fps and exactly 15 seconds. The Reel frames include the independent-member and CA$0.01-per-eligible-kWh disclosure, while the complete caption gives the calculator assumptions, ballpark limitation, privacy statement, referral compensation, approval and material Club conditions.
+
+The publication used `?src=facebook-page-calculator-reel`. A hard reload of the canonical Reel, caption expansion and a real outbound click confirmed the full caption, public availability and source-tag preservation through the calculator to the invitation CTA. It was not cross-posted to Groups, shared with collaborators or a story, or boosted.
+
+Verified Reel: <https://www.facebook.com/reel/1623553812534787>
+
+Do not publish a duplicate Reel.
+
 > **A Grizzl-E Club charger at $0 hardware purchase price — for eligible Canadian EV drivers**
 >
 > Approved Club members can access a connected Level 2 charger and earn cash rewards on eligible recorded home charging. Before requesting an invitation, review the real obligations: refundable deposit, shipping, installation/electrical work, reliable Wi-Fi/data, active primary use, and charger ownership/return conditions.
