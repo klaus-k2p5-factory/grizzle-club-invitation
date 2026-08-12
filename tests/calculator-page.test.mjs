@@ -15,6 +15,11 @@ test('calculator page has truthful SEO, disclosure and structured data', async (
   assert.match(html, /<h1>How much will a home EV charger really cost in Canada in year one\?<\/h1>/);
   assert.match(html, /CAD \$0\.01 per eligible referred kWh/);
   assert.match(html, /not (?:the )?(?:official )?Grizzl-E, United Chargers or Government of Canada/i);
+  assert.match(html, /<meta property="og:image" content="https:\/\/klaus-k2p5-factory\.github\.io\/grizzle-club-invitation\/assets\/og-ev-charger-cost-calculator\.jpg">/);
+  assert.match(html, /<meta property="og:image:width" content="1200">/);
+  assert.match(html, /<meta property="og:image:height" content="630">/);
+  assert.match(html, /<meta property="og:image:alt" content="Canadian first-year EV charger cost calculator showing hardware, installation, electricity, rebates and rewards">/);
+  assert.match(html, /<meta name="twitter:card" content="summary_large_image">/);
   assert.match(html, /"@type": "WebApplication"/);
   assert.match(html, /"@type": "Article"/);
   assert.doesNotMatch(html, /aggregateRating|reviewRating|priceCurrency/);

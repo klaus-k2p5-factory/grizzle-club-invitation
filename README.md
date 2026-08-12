@@ -21,7 +21,7 @@ Rebuild the social preview card with `python assets/generate-og-card.py`. The ge
 
 Transparent outreach copy, unique source links and moderator/admin request templates are in [`campaign/launch-kit.md`](campaign/launch-kit.md).
 
-The site also includes a private, client-side Canadian first-year EV charger cost calculator at [`ev-charger-cost-calculator-canada/`](ev-charger-cost-calculator-canada/). Run its calculation and page tests with `node --test tests/calculator.test.mjs tests/calculator-page.test.mjs`.
+The site also includes a private, client-side Canadian first-year EV charger cost calculator at [`ev-charger-cost-calculator-canada/`](ev-charger-cost-calculator-canada/). Run its calculation and page tests with `node --test tests/calculator.test.mjs tests/calculator-page.test.mjs`. Rebuild its social preview card with `python assets/generate-calculator-og.py`.
 
 ## Deployment
 
