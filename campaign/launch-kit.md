@@ -160,6 +160,16 @@ The Page published a second public post explaining that Canadians should compare
 
 Verified permalink: <https://www.facebook.com/permalink.php?story_fbid=122094167769445488&id=1158289830711289>
 
+### Simplified calculator post — 2026-08-12
+
+The Page published one source-tagged post for the simplified first-year EV charger cost calculator. It gives the explained starter example—15,000 km/year, 80% home charging, $700 charger and $1,500 installation—while making the technical inputs optional and labelling price amounts as planning examples rather than quotes or national averages. The post includes the full member-benefit and independent-resource disclosures.
+
+The scheduled one-shot job failed before taking browser action because the agent call reached an HTTP 429 usage limit. The Page was checked for an existing calculator post before the post was published manually through the authenticated Page identity. The canonical post was hard-reloaded, the full copy was verified, and Facebook's rendered payload was checked for the complete `?src=facebook-page-cost-calculator` URL. It is also pinned in the Page's Featured section.
+
+Verified permalink: <https://www.facebook.com/permalink.php?story_fbid=122094866847445488&id=1158289830711289>
+
+Do not rerun the completed one-shot job or publish a duplicate calculator post.
+
 > **A Grizzl-E Club charger at $0 hardware purchase price — for eligible Canadian EV drivers**
 >
 > Approved Club members can access a connected Level 2 charger and earn cash rewards on eligible recorded home charging. Before requesting an invitation, review the real obligations: refundable deposit, shipping, installation/electrical work, reliable Wi-Fi/data, active primary use, and charger ownership/return conditions.
