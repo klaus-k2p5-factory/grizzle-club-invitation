@@ -184,9 +184,31 @@ Do not publish a duplicate Reel.
 
 EVCO's live `Get paid to charge your EV at home` article is a current Canadian comparison of home-charging reward programs and already explains Grizzl-E's referral economics. Its official contact form accepted one request to review the independent first-year-cost calculator as a no-fee, clearly labelled companion link.
 
-The request used `?src=evco-editor-review`; disclosed Peter's current Club membership and potential CA$0.01-per-eligible-kWh benefit; summarized the approval, deposit, shipping, installation, Wi-Fi/data, active-use and ownership/return conditions; and asked EVCO to decline if membership, sponsorship or a fee is required. The form confirmed: `Thank you for your message. It has been sent.`
+The request used `?src=evco-editor-review`; disclosed Peter's current Club membership and potential CA$0.01-per-eligible-kWh benefit; summarized the approval, deposit, shipping, installation, Wi-Fi/data, active-use and ownership/return conditions; and asked EVCO to decline if membership, sponsorship or a fee is required. The form confirmation proved delivery only.
 
-This is only a permission request. Do not claim an EVCO placement or endorsement, and do not follow up with publication unless EVCO approves the exact URL, wording and adjacent disclosure in writing.
+Raymond Leury later declined the placement because EVCO wishes to remain neutral and avoid suggesting that one program is superior. Treat that as a final decline for this route. No reply to Raymond was sent, no placement exists, and no follow-up should be made.
+
+### Drive Electric NL permission gate — draft only, 2026-08-14
+
+Drive Electric NL's official site invites missing-resource suggestions and publishes `info@driveelectricnl.ca`. Its public Electric NL group has a current exact-intent question, “Is level 2 charger worth it for phev?” at <https://www.facebook.com/groups/electricNL/posts/4042152116082221>. No accessible current group rule affirmatively authorizes a financially beneficial external link, so no group reply, DM, account action or outreach is permitted without staff approval.
+
+The following email is prepared but **has not been sent**. Sending it requires explicit user approval. If approved, send it once from the verified operator account, then treat silence or an acknowledgement as no permission.
+
+Subject: `Permission request: one disclosed calculator reply in Electric NL`
+
+> Hello Drive Electric NL team,
+>
+> I noticed the public Electric NL group question, “Is level 2 charger worth it for phev?” May I make exactly one conditions-first reply to that question using the wording and link below, or wording you approve?
+>
+> **Proposed reply:** “One way to check whether Level 2 is worth installing for a PHEV is to start with annual kilometres, home-charging share and a real electrician quote. I made a private, client-side Canadian ballpark calculator: https://klaus-k2p5-factory.github.io/grizzle-club-invitation/ev-charger-cost-calculator-canada/?src=driveelectricnl-admin-review. The inputs stay in the browser. Disclosure: I am a Grizzl-E Club member. If someone voluntarily requests an invitation through the site, is approved, activates a qualifying charger and remains eligible, I may receive CAD $0.01 per eligible referred kWh under current terms. This is not Grizzl-E, United Chargers or government content. Approval, refundable deposit, shipping, installation/electrical work, Wi-Fi/data, active use, and ownership/return conditions apply; United Chargers decides eligibility.”
+>
+> I am asking before posting because the resource has a disclosed referral relationship. I will not DM members, repost, collect member data or imply Drive Electric NL endorses it. If it is not appropriate, please decline and I will not post. Please approve or revise the exact placement, wording, disclosure and URL in writing.
+>
+> Thank you,
+> Peter Mucha
+> hermancore1980@gmail.com
+
+Do not substitute the `admin-review` source into a public reply after approval. Create a separate placement-specific source only after staff approves the exact scope, and verify the canonical public reply if it is posted.
 
 > **A Grizzl-E Club charger at $0 hardware purchase price — for eligible Canadian EV drivers**
 >

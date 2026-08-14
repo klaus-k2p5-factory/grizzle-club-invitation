@@ -23,6 +23,8 @@ Transparent outreach copy, unique source links and moderator/admin request templ
 
 The site also includes a private, client-side Canadian first-year EV charger cost calculator at [`ev-charger-cost-calculator-canada/`](ev-charger-cost-calculator-canada/). Run its calculation and page tests with `node --test tests/calculator.test.mjs tests/calculator-page.test.mjs`. Rebuild its social preview card with `python assets/generate-calculator-og.py`.
 
+The dated, terms-based Canadian Club fit check is at [`is-grizzl-e-club-worth-it-canada/`](is-grizzl-e-club-worth-it-canada/). It separates current base cash tiers from the August 2026 promotional bonus announcement. Run its content and discovery tests with `node --test tests/club-fit-page.test.mjs`. Rebuild its social preview card with `python assets/generate-club-fit-og.py`.
+
 ## Deployment
 
 GitHub Pages deploys from the `main` branch root with HTTPS enforced.
