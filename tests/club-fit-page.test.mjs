@@ -26,12 +26,25 @@ test('material referral interest is disclosed before the first conversion link',
   const html = await read(pagePath);
   const disclosure = html.indexOf('CAD $0.01 per eligible referred kWh');
   const firstCta = html.indexOf('src=organic-club-fit');
+  const preConversion = html.slice(0, firstCta);
   assert.ok(disclosure >= 0, 'missing referral compensation disclosure');
   assert.ok(firstCta > disclosure, 'first invitation CTA must follow the disclosure');
-  assert.match(html, /not Grizzl-E, United Chargers or the Government of Canada/i);
-  assert.match(html, /United Chargers decides membership and charger eligibility/i);
+  assert.match(preConversion, /voluntarily requests an invitation/i);
+  assert.match(preConversion, /is approved/i);
+  assert.match(preConversion, /activates a qualifying referred charger/i);
+  assert.match(preConversion, /remains eligible/i);
+  assert.match(preConversion, /CAD \$0\.01 per eligible referred kWh/i);
+  assert.match(preConversion, /not Grizzl-E, United Chargers or the Government of Canada/i);
+  assert.match(preConversion, /United Chargers decides membership and charger eligibility/i);
   assert.match(html, /id="invitation-path-link"[^>]+href="\.\.\/\?src=organic-club-fit#request"/);
   assert.doesNotMatch(html, /<form[^>]+action=/);
+});
+
+test('mobile fit-guide disclosure uses a readable type size and spacing', async () => {
+  const css = await read('styles.css');
+  const mobileFitGuide = css.slice(css.lastIndexOf('@media (max-width: 650px)'));
+  assert.match(mobileFitGuide, /\.fit-guide-page \.disclosure-bar\s*\{[^}]*font-size:\s*13px/);
+  assert.match(mobileFitGuide, /\.fit-guide-page \.disclosure-inner\s*\{[^}]*padding:\s*8px 0/);
 });
 
 test('fit check covers the six material suitability and exit questions', async () => {
