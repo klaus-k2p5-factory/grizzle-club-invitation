@@ -14,6 +14,20 @@ Use a unique `src` value for every approved placement. The form stores it as a s
 - **No cold DMs, scraped contacts, mass cross-posting, fake engagement, or link-rule evasion.**
 - Put the referral disclosure in the post itself, not only on the landing page.
 
+## Owned Club fit-check route — 2026-08-14
+
+The site now includes a dated, crawlable decision guide at:
+
+<https://klaus-k2p5-factory.github.io/grizzle-club-invitation/is-grizzl-e-club-worth-it-canada/>
+
+It targets late-stage Canadian searches such as `grizzl-e club worth it`, `grizzl-e club requirements`, `grizzl-e club review canada` and the new up-to-15¢ headline without claiming a hands-on review. The page covers six practical fit/exit questions, links first-party sources, discloses Peter's potential CAD $0.01-per-eligible-referred-kWh benefit before the first conversion link, and uses `?src=organic-club-fit` for the invitation path.
+
+The August 12, 2026 official announcement is separated from current base cash tiers: the extra 5¢ starts October 1, 2026 as Thanksgiving Bonus Points for eligible members who own their Grizzl-E charger; only the Ultimate level can produce an up-to-15¢ total; and the announcement says those bonus points convert to cash October 1, 2027. Do not compress that into “members now earn 15¢.”
+
+Release commit `a326641` was deployed by successful GitHub Pages run `31770040679`. Public verification confirmed the live title/content, canonical source-tagged CTA, matching 1200×630 social card bytes, sitemap and homepage cross-link. The CTA lands on `?src=organic-club-fit#request`, stores `website:organic-club-fit`, and leaves consent unchecked. Content/regression tests passed 22/22; rendered QA at 1440px, 390px and 320px found no horizontal overflow, duplicate IDs, console/runtime errors or failed requests. The new guide and homepage were submitted once to IndexNow; `200` confirms receipt, not indexing or ranking.
+
+Do not publish a duplicate owned-Page calculator post or Reel to announce this page. A personal-profile share could provide more reach, but it publicly connects Peter's identity to the referral relationship and requires explicit user approval.
+
 ## Owned organic-search route — 2026-08-11
 
 The site now includes a crawlable, terms-based guide at:
