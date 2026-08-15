@@ -13,7 +13,7 @@ test('fit-check page targets the late-stage Canadian decision query truthfully',
   assert.match(html, /<html lang="en-CA">/);
   assert.match(html, /<title>Is Grizzl-E Club Worth It in Canada\? 2026 Fit Check<\/title>/);
   assert.match(html, /<meta name="description" content="Use a terms-based fit check to decide whether Grizzl-E Club may suit your Canadian home charging setup/);
-  assert.match(html, /<link rel="canonical" href="https:\/\/klaus-k2p5-factory\.github\.io\/grizzle-club-invitation\/is-grizzl-e-club-worth-it-canada\/">/);
+  assert.match(html, /<link rel="canonical" href="https:\/\/www\.evrewards\.ca\/is-grizzl-e-club-worth-it-canada\/">/);
   assert.match(html, /<h1>Is Grizzl-E Club worth it\? <em>Check the fit, not just the headline\.<\/em><\/h1>/);
   assert.match(html, /og-grizzle-club-fit-check\.jpg/);
   const card = await readFile(path.join(root, 'assets/og-grizzle-club-fit-check.jpg'));
@@ -97,5 +97,5 @@ test('new fit-check page is discoverable from site navigation and sitemap', asyn
   assert.match(home, /is-grizzl-e-club-worth-it-canada\//);
   assert.match(comparison, /\.\.\/is-grizzl-e-club-worth-it-canada\//);
   assert.match(sitemap, /is-grizzl-e-club-worth-it-canada\//);
-  assert.match(sitemap, /<lastmod>2026-08-14<\/lastmod>/);
+  assert.match(sitemap, /<lastmod>2026-08-15<\/lastmod>/);
 });

@@ -1,8 +1,9 @@
-# EV Home Rewards referral landing page
+# EV Rewards Canada referral website
 
 Transparent, static landing page for an independent Grizzl-E Club member referral campaign.
 
-- Live site: <https://klaus-k2p5-factory.github.io/grizzle-club-invitation/>
+- Intended canonical site: <https://www.evrewards.ca/>
+- Legacy GitHub Pages URL: <https://klaus-k2p5-factory.github.io/grizzle-club-invitation/> (retain it; verify its redirect only after GitHub attaches the custom domain)
 - Complete Hermes project handoff: [`.hermes.md`](.hermes.md)
 
 ## Form backend
@@ -27,6 +28,10 @@ The dated, terms-based Canadian Club fit check is at [`is-grizzl-e-club-worth-it
 
 ## Deployment
 
-GitHub Pages deploys from the `main` branch root with HTTPS enforced.
+GitHub Pages deploys from the `main` branch root. The repository `CNAME`
+declares `www.evrewards.ca` as the intended canonical host. Porkbun DNS has an
+apex `ALIAS` and `www` `CNAME` pointing to GitHub Pages. Do not claim that the
+custom domain, redirects or HTTPS are live until the Pages API and real HTTP/TLS
+checks verify them after deployment.
 The `google49a0907ec3fef867.html` ownership file must remain published for
 Google Search Console verification.

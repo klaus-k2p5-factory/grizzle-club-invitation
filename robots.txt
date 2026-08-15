@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://klaus-k2p5-factory.github.io/grizzle-club-invitation/sitemap.xml
+Sitemap: https://www.evrewards.ca/sitemap.xml

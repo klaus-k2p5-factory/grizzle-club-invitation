@@ -2,7 +2,7 @@
 
 Public landing page:
 
-`https://klaus-k2p5-factory.github.io/grizzle-club-invitation/`
+`https://www.evrewards.ca/`
 
 Use a unique `src` value for every approved placement. The form stores it as a source label; it does not collect browsing analytics.
 
@@ -18,7 +18,7 @@ Use a unique `src` value for every approved placement. The form stores it as a s
 
 The site now includes a dated, crawlable decision guide at:
 
-<https://klaus-k2p5-factory.github.io/grizzle-club-invitation/is-grizzl-e-club-worth-it-canada/>
+<https://www.evrewards.ca/is-grizzl-e-club-worth-it-canada/>
 
 It targets late-stage Canadian searches such as `grizzl-e club worth it`, `grizzl-e club requirements`, `grizzl-e club review canada` and the new up-to-15¢ headline without claiming a hands-on review. The page covers six practical fit/exit questions, links first-party sources, discloses Peter's potential CAD $0.01-per-eligible-referred-kWh benefit before the first conversion link, and uses `?src=organic-club-fit` for the invitation path.
 
@@ -32,7 +32,7 @@ Do not publish a duplicate owned-Page calculator post or Reel to announce this p
 
 The site now includes a crawlable, terms-based guide at:
 
-<https://klaus-k2p5-factory.github.io/grizzle-club-invitation/grizzle-club-vs-chargelab-rewards-canada/>
+<https://www.evrewards.ca/grizzle-club-vs-chargelab-rewards-canada/>
 
 It compares Grizzl-E Club and ChargeLab Rewards using the June 10, 2026 official Club terms and ChargeLab's July 1, 2026 Canada terms. It distinguishes supplied hardware from owner-supplied OCPP hardware, identifies ownership, connection, payout, active-use, carbon-credit and exit conditions, links to first-party sources, and repeats the member-benefit disclosure above both the editorial content and Grizzl-E call to action. The internal invitation CTA uses `?src=organic-comparison`; do not reuse that source for social posts or third-party placements.
 
@@ -156,8 +156,8 @@ Closest compliant alternatives: an operator-profile/Page post, an administrator-
 
 Suggested Facebook source URLs:
 
-- Approved new-EV-buyer group: `https://klaus-k2p5-factory.github.io/grizzle-club-invitation/?src=facebook-new-ev-buyers`
-- Approved vehicle-owner group: `https://klaus-k2p5-factory.github.io/grizzle-club-invitation/?src=facebook-vehicle-owner`
+- Approved new-EV-buyer group: `https://www.evrewards.ca/?src=facebook-new-ev-buyers`
+- Approved vehicle-owner group: `https://www.evrewards.ca/?src=facebook-vehicle-owner`
 - Other approved group: replace the suffix with `facebook-` plus a short group slug.
 
 ## Facebook Page launch post
@@ -214,7 +214,7 @@ Subject: `Permission request: one disclosed calculator reply in Electric NL`
 >
 > I noticed the public Electric NL group question, “Is level 2 charger worth it for phev?” May I make exactly one conditions-first reply to that question using the wording and link below, or wording you approve?
 >
-> **Proposed reply:** “One way to check whether Level 2 is worth installing for a PHEV is to start with annual kilometres, home-charging share and a real electrician quote. I made a private, client-side Canadian ballpark calculator: https://klaus-k2p5-factory.github.io/grizzle-club-invitation/ev-charger-cost-calculator-canada/?src=driveelectricnl-admin-review. The inputs stay in the browser. Disclosure: I am a Grizzl-E Club member. If someone voluntarily requests an invitation through the site, is approved, activates a qualifying charger and remains eligible, I may receive CAD $0.01 per eligible referred kWh under current terms. This is not Grizzl-E, United Chargers or government content. Approval, refundable deposit, shipping, installation/electrical work, Wi-Fi/data, active use, and ownership/return conditions apply; United Chargers decides eligibility.”
+> **Proposed reply:** “One way to check whether Level 2 is worth installing for a PHEV is to start with annual kilometres, home-charging share and a real electrician quote. I made a private, client-side Canadian ballpark calculator: https://www.evrewards.ca/ev-charger-cost-calculator-canada/?src=driveelectricnl-admin-review. The inputs stay in the browser. Disclosure: I am a Grizzl-E Club member. If someone voluntarily requests an invitation through the site, is approved, activates a qualifying charger and remains eligible, I may receive CAD $0.01 per eligible referred kWh under current terms. This is not Grizzl-E, United Chargers or government content. Approval, refundable deposit, shipping, installation/electrical work, Wi-Fi/data, active use, and ownership/return conditions apply; United Chargers decides eligibility.”
 >
 > I am asking before posting because the resource has a disclosed referral relationship. I will not DM members, repost, collect member data or imply Drive Electric NL endorses it. If it is not appropriate, please decline and I will not post. Please approve or revise the exact placement, wording, disclosure and URL in writing.
 >
@@ -229,7 +229,7 @@ Do not substitute the `admin-review` source into a public reply after approval. 
 > Approved Club members can access a connected Level 2 charger and earn cash rewards on eligible recorded home charging. Before requesting an invitation, review the real obligations: refundable deposit, shipping, installation/electrical work, reliable Wi-Fi/data, active primary use, and charger ownership/return conditions.
 >
 > Read the plain-language guide and request one official invitation:
-> https://klaus-k2p5-factory.github.io/grizzle-club-invitation/?src=facebook-page-launch
+> https://www.evrewards.ca/?src=facebook-page-launch
 >
 > Independent member referral. I may earn CAD $0.01 per eligible referred kWh. United Chargers decides eligibility; current terms control.
 
@@ -245,7 +245,7 @@ Subject: `May I share a transparent Canadian Grizzl-E Club referral resource?`
 >
 > I would disclose in the post that this is my independent member-referral page and that I may earn CAD $0.01 per eligible referred kWh. I will not cold-message members, repost repeatedly or imply official endorsement.
 >
-> Moderator preview: https://klaus-k2p5-factory.github.io/grizzle-club-invitation/?src=forum-moderator-review
+> Moderator preview: https://www.evrewards.ca/?src=forum-moderator-review
 >
 > Thanks,
 > Herman
@@ -257,9 +257,9 @@ Subject: `May I share a transparent Canadian Grizzl-E Club referral resource?`
 
 Suggested Reddit source URLs after moderator approval:
 
-- `https://klaus-k2p5-factory.github.io/grizzle-club-invitation/?src=reddit-canadianev`
-- `https://klaus-k2p5-factory.github.io/grizzle-club-invitation/?src=reddit-teslacanada`
-- `https://klaus-k2p5-factory.github.io/grizzle-club-invitation/?src=reddit-barrie`
+- `https://www.evrewards.ca/?src=reddit-canadianev`
+- `https://www.evrewards.ca/?src=reddit-teslacanada`
+- `https://www.evrewards.ca/?src=reddit-barrie`
 
 ## Forum moderator request
 

@@ -41,7 +41,7 @@ d.ellipse((60, 44, 101, 85), fill=red)
 d.rounded_rectangle((74, 53, 87, 74), radius=4, outline=white, width=3)
 d.line((77, 49, 77, 58), fill=white, width=3)
 d.line((84, 49, 84, 58), fill=white, width=3)
-d.text((114, 49), "EV HOME REWARDS", font=font_brand, fill=white)
+d.text((114, 49), "EV REWARDS CANADA", font=font_brand, fill=white)
 
 # Comparison message.
 d.text((60, 130), "CANADIAN HOME-CHARGING REWARDS", font=font_kicker, fill=mint)

@@ -42,7 +42,7 @@ d.ellipse((60, 43, 101, 84), fill=red)
 d.rounded_rectangle((74, 52, 87, 73), radius=4, outline=white, width=3)
 d.line((77, 48, 77, 57), fill=white, width=3)
 d.line((84, 48, 84, 57), fill=white, width=3)
-d.text((114, 48), "EV HOME REWARDS", font=font_brand, fill=white)
+d.text((114, 48), "EV REWARDS CANADA", font=font_brand, fill=white)
 
 # Query-aligned message.
 d.text((60, 124), "CANADIAN TERMS-BASED FIT CHECK", font=font_kicker, fill=mint)

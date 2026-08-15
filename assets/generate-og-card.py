@@ -47,7 +47,7 @@ d.ellipse((60, 45, 101, 86), fill=red)
 d.rounded_rectangle((74, 54, 87, 75), radius=4, outline=white, width=3)
 d.line((77, 50, 77, 59), fill=white, width=3)
 d.line((84, 50, 84, 59), fill=white, width=3)
-d.text((114, 50), "EV HOME REWARDS", font=font_brand, fill=white)
+d.text((114, 50), "EV REWARDS CANADA", font=font_brand, fill=white)
 
 # Referral identity and core offer.
 d.text((60, 132), "FOR ELIGIBLE CANADIAN EV DRIVERS", font=font_kicker, fill=mint)
