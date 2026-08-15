@@ -2,8 +2,8 @@
 
 Transparent, static landing page for an independent Grizzl-E Club member referral campaign.
 
-- Intended canonical site: <https://www.evrewards.ca/>
-- Legacy GitHub Pages URL: <https://klaus-k2p5-factory.github.io/grizzle-club-invitation/> (retain it; verify its redirect only after GitHub attaches the custom domain)
+- Canonical site: <https://www.evrewards.ca/>
+- Legacy GitHub Pages URL: <https://klaus-k2p5-factory.github.io/grizzle-club-invitation/> (retained; redirects to canonical HTTPS with paths and query strings preserved)
 - Complete Hermes project handoff: [`.hermes.md`](.hermes.md)
 
 ## Form backend
@@ -29,9 +29,9 @@ The dated, terms-based Canadian Club fit check is at [`is-grizzl-e-club-worth-it
 ## Deployment
 
 GitHub Pages deploys from the `main` branch root. The repository `CNAME`
-declares `www.evrewards.ca` as the intended canonical host. Porkbun DNS has an
-apex `ALIAS` and `www` `CNAME` pointing to GitHub Pages. Do not claim that the
-custom domain, redirects or HTTPS are live until the Pages API and real HTTP/TLS
-checks verify them after deployment.
+declares `www.evrewards.ca` as the canonical host. Porkbun DNS has an apex
+`ALIAS` and `www` `CNAME` pointing to GitHub Pages. The Pages custom domain,
+valid apex/`www` TLS certificate, HTTPS enforcement, apex redirect and legacy
+project-URL redirect were verified live on 2026-08-15.
 The `google49a0907ec3fef867.html` ownership file must remain published for
 Google Search Console verification.
