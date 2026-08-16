@@ -101,13 +101,13 @@ test('calculator is integrated into home, comparison and sitemap with distinct s
   assert.doesNotMatch(calculator, /src=organic-comparison#request/);
 });
 
-test('calculator preserves a safe inbound campaign source through its invitation CTA', async () => {
+test('calculator preserves only an allow-listed inbound campaign source through its invitation CTA', async () => {
   const script = await read('calculator.js');
-  assert.match(script, /new URLSearchParams\(window\.location\.search\)/);
-  assert.match(script, /params\.get\('src'\)/);
-  assert.match(script, /replace\(\/\[\^a-zA-Z0-9_.-\]\/g, ''\)\.slice\(0, 60\)/);
+  assert.match(script, /const attributedSource = window\.EVRewardsAnalytics\?\.source/);
+  assert.match(script, /attributedSource && attributedSource !== 'direct'/);
   assert.match(script, /invitationLink\.href = `\.\.\/\?src=\$\{campaign\}#request`/);
   assert.match(script, /organic-cost-calculator/);
+  assert.doesNotMatch(script, /new URLSearchParams|params\.get\('src'\)|location\.search/);
 });
 
 test('calculator browser script avoids storage, tracking and network submission', async () => {

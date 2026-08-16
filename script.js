@@ -45,8 +45,7 @@
     window.addEventListener('resize', updateMobileCta, { passive: true });
   }
 
-  const params = new URLSearchParams(window.location.search);
-  const campaign = (params.get('src') || params.get('utm_source') || 'direct').replace(/[^a-zA-Z0-9_.-]/g, '').slice(0, 60);
+  const campaign = window.EVRewardsAnalytics?.source || 'direct';
   if (sourceField) sourceField.value = `website:${campaign}`;
 
   const showError = (message, field) => {
@@ -88,6 +87,7 @@
     submitting = false;
     form.hidden = true;
     success.hidden = false;
+    window.EVRewardsAnalytics?.trackInvitationRequest?.();
     success.focus({ preventScroll: true });
     success.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });

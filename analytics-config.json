@@ -1,0 +1,24 @@
+{
+  "provider": "GoatCounter",
+  "site_code": "evrewardscanada",
+  "verified_at": "2026-08-16",
+  "link_domain": "www.evrewards.ca",
+  "dashboard": "private",
+  "allow_counter": false,
+  "allow_embed_origins": [],
+  "retention_days": 365,
+  "collect_enabled_codes": [
+    128,
+    2
+  ],
+  "collect": {
+    "individual_pageviews": false,
+    "sessions": true,
+    "referrer": true,
+    "user_agent": false,
+    "size": false,
+    "country": false,
+    "region": false,
+    "language": false
+  }
+}

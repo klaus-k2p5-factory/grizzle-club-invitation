@@ -4,7 +4,7 @@ Public landing page:
 
 `https://www.evrewards.ca/`
 
-Use a unique `src` value for every approved placement. The form stores it as a source label; it does not collect browsing analytics.
+Use a unique, allow-listed `src` value for every approved placement. GoatCounter reports aggregate visits for that campaign and the form stores the same source label for the invitation request. Add every new planned value to the exact allow-list in `analytics.js` before publishing the link; arbitrary query values are treated as `direct`. Analytics never receives the visitor's email, consent response or calculator inputs.
 
 ## Channel decision
 
