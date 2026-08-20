@@ -64,10 +64,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .disclosure-inner a { color: var(--mint); text-underline-offset: 3px; }
 
 .site-header {
-  position: absolute;
-  top: 34px;
-  left: 0;
-  right: 0;
+  position: relative;
+  margin-bottom: -77px;
   z-index: 20;
   color: white;
   border-bottom: 1px solid rgba(255, 255, 255, .2);
@@ -76,6 +74,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-header.is-sticky {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
   color: var(--ink);
   background: rgba(255, 253, 248, .96);
   border-bottom-color: var(--line);
@@ -182,6 +183,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero h1 em { color: var(--mint); font-style: normal; }
 .hero-lede { max-width: 590px; margin: 0; color: rgba(255,255,255,.86); font-size: clamp(18px, 2vw, 21px); line-height: 1.45; }
 .hero-lede strong { color: white; }
+.invitation-first-callout { max-width: 590px; display: grid; grid-template-columns: auto 1fr; gap: 13px; align-items: start; margin-top: 22px; padding: 14px 16px; color: white; border-left: 4px solid var(--mint); background: rgba(7,23,32,.72); backdrop-filter: blur(8px); }
+.invitation-first-callout > span { padding: 5px 8px; color: var(--ink); background: var(--mint); font: 800 10px/1.1 "Manrope",sans-serif; letter-spacing: .07em; text-transform: uppercase; white-space: nowrap; }
+.invitation-first-callout p { margin: 0; font-size: 13px; line-height: 1.5; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 .hero-caveat { max-width: 580px; margin: 22px 0 0; color: rgba(255,255,255,.66); font-size: 12.5px; line-height: 1.5; }
 
@@ -264,6 +268,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .mini-proof strong, .mini-proof small { display: block; }
 .mini-proof strong { font-size: 15px; }
 .mini-proof small { margin-top: 3px; color: rgba(255,255,255,.84); line-height: 1.45; }
+.already-registered-note { max-width: 490px; margin-top: 28px; padding: 17px 18px; color: #4d2007; border: 1px solid rgba(255,255,255,.48); border-left: 5px solid var(--gold); background: #fff2cf; }
+.already-registered-note strong { font: 800 15px/1.3 "Manrope",sans-serif; }
+.already-registered-note p { margin: 7px 0 0; font-size: 13px; line-height: 1.52; }
 .form-card { position: relative; color: var(--ink); background: var(--white); padding: clamp(26px, 4vw, 48px); box-shadow: var(--shadow); }
 .form-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
 .form-heading span { font: 800 24px/1.2 "Manrope",sans-serif; letter-spacing: -.04em; }
@@ -293,6 +300,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .choice-grid span { min-height: 58px; display: flex; align-items: center; justify-content: center; padding: 8px 11px; border: 1px solid #cbd0cd; border-radius: 3px; color: #3b4b50; text-align: center; font-size: 12px; line-height: 1.25; transition: all .15s ease; }
 .choice-grid input:checked + span { color: var(--ink); border-color: var(--ink); background: #e3f3ec; box-shadow: inset 0 0 0 1px var(--ink); font-weight: 700; }
 .choice-grid input:focus-visible + span { outline: 3px solid var(--gold); outline-offset: 3px; }
+.eligibility-box { margin: 5px 0 12px; padding: 17px 18px; border: 2px solid #c48b23; background: #fff6dc; }
+.eligibility-box label { display: grid; grid-template-columns: 20px 1fr; gap: 12px; align-items: start; cursor: pointer; }
+.eligibility-box input { width: 18px; height: 18px; margin-top: 3px; accent-color: var(--red); }
+.eligibility-box span { color: #453913; font-size: 14px; line-height: 1.55; }
+.eligibility-box strong { color: var(--ink); }
+.eligibility-box > small { display: block; margin: 9px 0 0 32px; color: #695d3c; font-size: 11.5px; line-height: 1.45; }
 .consent-box { margin-top: 5px; padding: 18px; border: 1px solid #d6d0c3; background: #f4f0e7; }
 .consent-box label { display: grid; grid-template-columns: 20px 1fr; gap: 12px; align-items: start; cursor: pointer; }
 .consent-box input { width: 18px; height: 18px; margin-top: 3px; accent-color: var(--red); }
@@ -335,6 +348,7 @@ footer { padding: 70px 0 26px; color: rgba(255,255,255,.7); background: #061218;
 .footer-grid strong { display: block; margin-bottom: 16px; color: white; font: 700 13px/1.3 "Manrope",sans-serif; }
 .footer-grid > div > a:not(.brand) { display: block; margin: 10px 0; color: rgba(255,255,255,.66); font-size: 13px; text-decoration: none; }
 .footer-grid > div > a:not(.brand):hover { color: white; text-decoration: underline; text-underline-offset: 3px; }
+.footer-sequence-note { display: block; max-width: 270px; margin-top: 15px; color: var(--gold); font-size: 11px; line-height: 1.45; }
 .footer-bottom { display: flex; justify-content: space-between; gap: 40px; margin-top: 60px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.14); font-size: 11px; }
 .mobile-cta { display: none; }
 
@@ -367,10 +381,10 @@ footer { padding: 70px 0 26px; color: rgba(255,255,255,.7); background: #061218;
   :root { --wrap: calc(100% - 28px); }
   html { scroll-padding-top: 76px; }
   body { padding-bottom: 72px; }
-  .disclosure-bar { font-size: 10px; }
-  .disclosure-inner { min-height: 42px; }
+  .disclosure-bar { font-size: 12px; line-height: 1.42; }
+  .disclosure-inner { min-height: 42px; padding: 8px 0; }
   .disclosure-inner a { display: none; }
-  .site-header { top: 42px; }
+  .site-header { margin-bottom: -65px; }
   .site-header.is-sticky { top: 0; }
   .nav-wrap { min-height: 64px; }
   .nav-wrap .button-small { display: none; }
@@ -383,6 +397,8 @@ footer { padding: 70px 0 26px; color: rgba(255,255,255,.7); background: #061218;
   .hero-lede { font-size: 17px; }
   .hero-actions { display: grid; grid-template-columns: 1fr; }
   .hero-actions .button { width: 100%; }
+  .invitation-first-callout { grid-template-columns: 1fr; gap: 9px; padding: 13px 14px; }
+  .invitation-first-callout > span { justify-self: start; }
   .facts-grid { grid-template-columns: 1fr; }
   .fact { min-height: 125px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .fact:last-child { border-bottom: 0; }
@@ -404,7 +420,7 @@ footer { padding: 70px 0 26px; color: rgba(255,255,255,.7); background: #061218;
   .field-row, .choice-grid { grid-template-columns: 1fr; }
   .choice-grid span { min-height: 48px; justify-content: flex-start; text-align: left; }
   .form-heading small { display: none; }
-  .consent-box { padding: 15px; }
+  .eligibility-box, .consent-box { padding: 15px; }
   .final-cta-inner { display: block; }
   .final-cta .button { width: 100%; margin-top: 30px; }
   .footer-grid { grid-template-columns: 1fr; }

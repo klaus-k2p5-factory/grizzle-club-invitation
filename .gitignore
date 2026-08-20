@@ -1,4 +1,5 @@
 form-batch.json
 qa-output/
+.hermes/
 __pycache__/
 .DS_Store

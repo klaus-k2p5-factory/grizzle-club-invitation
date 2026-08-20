@@ -8,6 +8,7 @@
   const errorBox = document.querySelector('#form-error');
   const success = document.querySelector('#success-state');
   const sourceField = document.querySelector('#source-field');
+  const notRegistered = document.querySelector('#not-registered');
   const loadedAt = Date.now();
   let submitting = false;
 
@@ -68,10 +69,16 @@
       return;
     }
 
+    if (notRegistered && !notRegistered.checked) {
+      event.preventDefault();
+      showError('Please confirm that you have not already registered this email before registering through the official invitation.', notRegistered);
+      return;
+    }
+
     if (!form.checkValidity()) {
       event.preventDefault();
       const invalid = form.querySelector(':invalid');
-      showError('Please complete all required fields and accept the consent statement.', invalid);
+      showError('Please complete all required fields and accept both confirmation statements.', invalid);
       return;
     }
 
