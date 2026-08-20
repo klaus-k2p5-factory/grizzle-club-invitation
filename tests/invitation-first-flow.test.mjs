@@ -46,9 +46,21 @@ test('form qualifies unregistered visitors without transmitting another field', 
 test('success state protects attribution while the visitor waits', async () => {
   const html = await read('index.html');
   const success = html.slice(html.indexOf('id="success-state"'), html.indexOf('</div>', html.indexOf('id="success-state"')) + 6);
+  assert.match(success, /Request received\. Please wait for your invitation link to arrive by email\./i);
+  assert.doesNotMatch(success, /Please stop here/i);
   assert.match(success, /do not register separately/i);
   assert.match(success, /same email/i);
   assert.match(success, /official invitation/i);
+});
+
+test('bottom calls to action use the shorter invitation label', async () => {
+  const html = await read('index.html');
+  const finalCta = html.slice(html.indexOf('<section class="final-cta">'), html.indexOf('</section>', html.indexOf('<section class="final-cta">')));
+  const mobileCta = html.slice(html.indexOf('<div class="mobile-cta"'), html.indexOf('</div>', html.indexOf('<div class="mobile-cta"')));
+  for (const [name, block] of [['final CTA', finalCta], ['mobile CTA', mobileCta]]) {
+    assert.match(block, />Request my invitation</i, `${name} is missing the shorter label`);
+    assert.doesNotMatch(block, />Request my invitation first</i, `${name} still contains “first”`);
+  }
 });
 
 test('site provides official terms without a direct Club registration landing-page link', async () => {
