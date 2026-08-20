@@ -8,6 +8,25 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = (relative) => readFile(path.join(root, relative), 'utf8');
 const pagePath = 'is-grizzl-e-club-worth-it-canada/index.html';
 
+function mediaBlocks(css, header) {
+  const blocks = [];
+  let cursor = 0;
+  while ((cursor = css.indexOf(header, cursor)) >= 0) {
+    const open = css.indexOf('{', cursor + header.length);
+    assert.ok(open >= 0, `missing opening brace for ${header}`);
+    let depth = 1;
+    let end = open + 1;
+    for (; end < css.length && depth; end += 1) {
+      if (css[end] === '{') depth += 1;
+      else if (css[end] === '}') depth -= 1;
+    }
+    assert.equal(depth, 0, `unclosed media block for ${header}`);
+    blocks.push(css.slice(open + 1, end - 1));
+    cursor = end;
+  }
+  return blocks;
+}
+
 test('fit-check page targets the late-stage Canadian decision query truthfully', async () => {
   const html = await read(pagePath);
   assert.match(html, /<html lang="en-CA">/);
@@ -42,9 +61,11 @@ test('material referral interest is disclosed before the first conversion link',
 
 test('mobile fit-guide disclosure uses a readable type size and spacing', async () => {
   const css = await read('styles.css');
-  const mobileFitGuide = css.slice(css.lastIndexOf('@media (max-width: 650px)'));
-  assert.match(mobileFitGuide, /\.fit-guide-page \.disclosure-bar\s*\{[^}]*font-size:\s*13px/);
-  assert.match(mobileFitGuide, /\.fit-guide-page \.disclosure-inner\s*\{[^}]*padding:\s*8px 0/);
+  const fitBlock = mediaBlocks(css, '@media (max-width: 650px)').find((block) =>
+    block.includes('.fit-guide-page .disclosure-bar'));
+  assert.ok(fitBlock, 'fit-guide mobile declarations must be inside a 650px media block');
+  assert.match(fitBlock, /\.fit-guide-page \.disclosure-bar\s*\{[^}]*font-size:\s*13px/);
+  assert.match(fitBlock, /\.fit-guide-page \.disclosure-inner\s*\{[^}]*padding:\s*8px 0/);
 });
 
 test('fit check covers the six material suitability and exit questions', async () => {
@@ -97,5 +118,5 @@ test('new fit-check page is discoverable from site navigation and sitemap', asyn
   assert.match(home, /is-grizzl-e-club-worth-it-canada\//);
   assert.match(comparison, /\.\.\/is-grizzl-e-club-worth-it-canada\//);
   assert.match(sitemap, /is-grizzl-e-club-worth-it-canada\//);
-  assert.match(sitemap, /<lastmod>2026-08-15<\/lastmod>/);
+  assert.match(sitemap, /<lastmod>2026-08-20<\/lastmod>/);
 });

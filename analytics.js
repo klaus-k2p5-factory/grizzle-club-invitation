@@ -31,6 +31,7 @@
     'organic-club-fit',
     'organic-comparison',
     'organic-cost-calculator',
+    'organic-free-charger',
     'opportunity-finder-calculator',
     'opportunity-finder-comparison',
     'opportunity-finder-fit-guide',

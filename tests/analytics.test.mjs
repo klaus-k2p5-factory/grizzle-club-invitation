@@ -13,13 +13,14 @@ const publicPages = [
   ['privacy.html', 'analytics.js'],
   ['ev-charger-cost-calculator-canada/index.html', '../analytics.js'],
   ['grizzle-club-vs-chargelab-rewards-canada/index.html', '../analytics.js'],
-  ['is-grizzl-e-club-worth-it-canada/index.html', '../analytics.js']
+  ['is-grizzl-e-club-worth-it-canada/index.html', '../analytics.js'],
+  ['free-ev-charger-canada/index.html', '../analytics.js']
 ];
 
 test('every public page loads only the local privacy controller', async () => {
   for (const [file, localScript] of publicPages) {
     const html = await read(file);
-    const local = html.indexOf(`<script src="${localScript}?v=20260816-1"></script>`);
+    const local = html.indexOf(`<script src="${localScript}?v=20260820-2"></script>`);
     assert.notEqual(local, -1, `${file} is missing the local analytics privacy controls`);
     assert.doesNotMatch(html, /gc\.zgo\.at|goatcounter\.com\/count/, `${file} must not load a beacon before privacy controls succeed`);
     const scriptSources = [...html.matchAll(/<script\b[^>]*>/gi)].flatMap(match => {

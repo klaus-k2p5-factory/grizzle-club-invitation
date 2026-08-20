@@ -248,6 +248,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .terms-note { margin: 24px 0 0; color: var(--muted); font-size: 13px; }
 .comparison-promo { margin: 30px 0 0; padding: 20px 22px; color: #294047; background: #e4f4ed; border-left: 4px solid #25805e; font-size: 14px; }
 .comparison-promo a { color: var(--red-dark); font-weight: 800; text-underline-offset: 4px; }
+.related-guide-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; margin-top: 30px; }
+.related-guide-grid .comparison-promo { height: 100%; margin: 0; }
 
 .fit-section { color: white; background: #173743; }
 .fit-heading .section-label { color: var(--mint); }
@@ -748,4 +750,79 @@ footer { padding: 70px 0 26px; color: rgba(255,255,255,.7); background: #061218;
   .fit-question-grid article { min-height: 0; padding: 30px 24px; }
   .cost-buckets article { grid-template-columns: 1fr; gap: 10px; }
   .fit-cta-paths { grid-template-columns: 1fr; }
+}
+
+/* Conditions-first free EV charger guide */
+.free-charger-page { padding: 0; background: var(--paper); }
+.free-charger-hero { overflow: hidden; }
+.free-charger-hero::before { width: 760px; height: 760px; right: -240px; top: -360px; background: radial-gradient(circle, rgba(214,68,58,.21), transparent 68%); }
+.free-ledger { border-top-color: var(--red); }
+.free-ledger .decision-kicker { color: var(--red-dark); }
+.citation { display: inline-flex; margin-left: 4px; color: var(--red-dark); font: 800 11px/1 "Manrope",sans-serif; text-decoration: none; vertical-align: super; }
+.citation:hover, .citation:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+.light-citation { color: var(--mint); }
+.free-meaning-section { padding: 108px 0; color: white; background: #173743; }
+.free-meaning-section .section-heading > p { color: rgba(255,255,255,.68); }
+.meaning-grid { display: grid; grid-template-columns: repeat(3,1fr); margin-top: 55px; border-top: 1px solid rgba(255,255,255,.22); border-left: 1px solid rgba(255,255,255,.22); }
+.meaning-grid article { min-height: 305px; padding: 38px 34px; border-right: 1px solid rgba(255,255,255,.22); border-bottom: 1px solid rgba(255,255,255,.22); }
+.meaning-grid article > span { color: var(--mint); font: 700 11px/1 "Manrope",sans-serif; }
+.meaning-grid h3 { margin: 34px 0 15px; font: 800 25px/1.12 "Manrope",sans-serif; letter-spacing: -.04em; }
+.meaning-grid p { color: rgba(255,255,255,.7); font-size: 14px; line-height: 1.65; }
+.meaning-grid strong { display: block; margin-top: 30px; padding-top: 19px; border-top: 1px solid rgba(255,255,255,.16); color: var(--mint); font-size: 12px; line-height: 1.5; }
+.free-comparison-table { min-width: 1120px; }
+.free-comparison-table thead th:first-child, .free-comparison-table tbody th { width: 17%; }
+.free-comparison-table td { width: 27.66%; }
+.real-cost-section { padding: 108px 0; color: white; background: var(--ink); }
+.real-cost-layout { display: grid; grid-template-columns: .68fr 1.32fr; gap: clamp(55px, 9vw, 135px); align-items: start; }
+.real-cost-section .section-heading h2 { color: white; }
+.real-cost-section .section-heading > p { color: rgba(255,255,255,.7); font-size: 16px; line-height: 1.7; }
+.real-cost-section .button { margin-top: 25px; }
+.cost-condition-grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid rgba(255,255,255,.21); border-left: 1px solid rgba(255,255,255,.21); }
+.cost-condition-grid > div { min-height: 158px; padding: 26px 25px; border-right: 1px solid rgba(255,255,255,.21); border-bottom: 1px solid rgba(255,255,255,.21); }
+.cost-condition-grid span { color: var(--mint); font: 800 15px/1.35 "Manrope",sans-serif; }
+.cost-condition-grid p { margin: 11px 0 0; color: rgba(255,255,255,.68); font-size: 13px; line-height: 1.58; }
+.private-program-section { padding: 108px 0; background: var(--white); }
+.private-program-layout { display: grid; grid-template-columns: .72fr 1.28fr; gap: clamp(55px, 9vw, 135px); align-items: start; }
+.private-program-layout h2 { margin: 18px 0 0; font: 800 clamp(2.4rem, 4.2vw, 4.4rem)/1.02 "Manrope",sans-serif; letter-spacing: -.058em; text-wrap: balance; }
+.private-program-copy { padding-top: 45px; border-top: 1px solid var(--line); }
+.private-program-copy p { margin: 0 0 26px; color: #334950; font-size: 17px; line-height: 1.75; }
+.path-section { padding: 108px 0; color: white; background: #173743; }
+.path-section .section-heading h2 { color: white; }
+.path-grid { display: grid; grid-template-columns: repeat(3,1fr); margin-top: 55px; border-top: 1px solid rgba(255,255,255,.22); border-left: 1px solid rgba(255,255,255,.22); }
+.path-grid article { display: flex; min-height: 410px; flex-direction: column; padding: 37px 32px; border-right: 1px solid rgba(255,255,255,.22); border-bottom: 1px solid rgba(255,255,255,.22); }
+.path-grid article > span { color: var(--mint); font: 800 11px/1.4 "Manrope",sans-serif; letter-spacing: .06em; text-transform: uppercase; }
+.path-grid h3 { margin: 29px 0 14px; font: 800 25px/1.12 "Manrope",sans-serif; letter-spacing: -.04em; }
+.path-grid p { margin: 0 0 28px; color: rgba(255,255,255,.7); font-size: 14px; line-height: 1.65; }
+.path-grid .button { width: 100%; margin-top: auto; text-align: center; }
+.path-grid small { margin-top: 15px; color: rgba(255,255,255,.75); font-size: 12px; line-height: 1.5; }
+.invitation-sequence { padding: 108px 0; background: var(--paper); }
+.invitation-sequence-layout { display: grid; grid-template-columns: .72fr 1.28fr; gap: clamp(55px, 9vw, 135px); align-items: start; }
+.invitation-sequence h2 { margin: 18px 0 0; font: 800 clamp(2.4rem, 4.2vw, 4.4rem)/1.02 "Manrope",sans-serif; letter-spacing: -.058em; text-wrap: balance; }
+.invitation-sequence ol { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.invitation-sequence li { display: grid; grid-template-columns: 46px 1fr; gap: 16px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+.invitation-sequence li > span { padding-top: 3px; color: var(--red-dark); font: 700 11px/1 "Manrope",sans-serif; }
+.invitation-sequence p { margin: 0; color: #334950; font-size: 15px; line-height: 1.65; }
+.free-faq { background: var(--white); }
+
+@media (max-width: 980px) {
+  .meaning-grid { grid-template-columns: 1fr; }
+  .meaning-grid article { min-height: 0; }
+  .real-cost-layout, .private-program-layout, .invitation-sequence-layout { grid-template-columns: 1fr; }
+  .path-grid { grid-template-columns: 1fr; }
+  .path-grid article { min-height: 0; }
+}
+
+@media (max-width: 650px) {
+  .free-charger-page { padding-bottom: 0; }
+  .free-charger-page .disclosure-bar { font-size: 13px; line-height: 1.45; }
+  .free-charger-page .disclosure-inner { display: block; padding: 8px 0; }
+  .free-charger-page .disclosure-inner a { display: inline-block; margin-top: 6px; }
+  .related-guide-grid { grid-template-columns: 1fr; gap: 14px; }
+  .free-meaning-section, .real-cost-section, .private-program-section, .path-section, .invitation-sequence { padding: 78px 0; }
+  .meaning-grid, .path-grid { margin-top: 40px; }
+  .meaning-grid article, .path-grid article { padding: 31px 24px; }
+  .cost-condition-grid { grid-template-columns: 1fr; }
+  .cost-condition-grid > div { min-height: 0; }
+  .private-program-copy { padding-top: 30px; }
+  .invitation-sequence li { grid-template-columns: 34px 1fr; }
 }

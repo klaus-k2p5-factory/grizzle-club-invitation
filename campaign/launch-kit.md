@@ -202,11 +202,11 @@ The request used `?src=evco-editor-review`; disclosed Peter's current Club membe
 
 Raymond Leury later declined the placement because EVCO wishes to remain neutral and avoid suggesting that one program is superior. Treat that as a final decline for this route. No reply to Raymond was sent, no placement exists, and no follow-up should be made.
 
-### Drive Electric NL permission gate — draft only, 2026-08-14
+### Drive Electric NL permission gate — sent 2026-08-20; no placement
 
 Drive Electric NL's official site invites missing-resource suggestions and publishes `info@driveelectricnl.ca`. Its public Electric NL group has a current exact-intent question, “Is level 2 charger worth it for phev?” at <https://www.facebook.com/groups/electricNL/posts/4042152116082221>. No accessible current group rule affirmatively authorizes a financially beneficial external link, so no group reply, DM, account action or outreach is permitted without staff approval.
 
-The following email is prepared but **has not been sent**. Sending it requires explicit user approval. If approved, send it once from the verified operator account, then treat silence or an acknowledgement as no permission.
+After explicit user approval, the following email was sent exactly once from the verified operator account to `info@driveelectricnl.ca` on 2026-08-20. Gmail verified it in Sent with message ID `1a01f63299dc1655`. This proves delivery from the operator mailbox only—not receipt, approval or permission. No group reply, DM or public placement was made. Treat silence or an acknowledgement as no permission.
 
 Subject: `Permission request: one disclosed calculator reply in Electric NL`
 
@@ -223,6 +223,8 @@ Subject: `Permission request: one disclosed calculator reply in Electric NL`
 > hermancore1980@gmail.com
 
 Do not substitute the `admin-review` source into a public reply after approval. Create a separate placement-specific source only after staff approves the exact scope, and verify the canonical public reply if it is posted.
+
+The existing silent Gmail permission monitor now includes `driveelectricnl.ca` and the exact subject above. Its regression suite passed 3/3 and a live no-reply run exited normally on 2026-08-20. A monitor alert is evidence of correspondence only; inspect the reply before classifying it as approval, decline or acknowledgement.
 
 > **A Grizzl-E Club charger at $0 hardware purchase price — for eligible Canadian EV drivers**
 >
