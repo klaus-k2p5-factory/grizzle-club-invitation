@@ -22,6 +22,8 @@ const publicPages = async (directory = root) => {
 
 test('homepage makes the invitation-first sequence unmistakable before conversion', async () => {
   const html = await read('index.html');
+  assert.match(html, /<span class="section-label light">First step—request invite link<\/span>/i);
+  assert.doesNotMatch(html, /Your first step—not registration/i);
   const firstFormCta = html.indexOf('href="#request"');
   assert.ok(firstFormCta > 0, 'missing invitation CTA');
   const beforeFirstCta = html.slice(0, firstFormCta);
