@@ -22,7 +22,7 @@ test('calculator page has truthful SEO, disclosure and structured data', async (
   assert.match(html, /<meta property="og:image:height" content="630">/);
   assert.match(html, /<meta property="og:image:alt" content="Canadian first-year EV charger cost calculator showing hardware, installation, electricity, rebates and rewards">/);
   assert.match(html, /<meta name="twitter:card" content="summary_large_image">/);
-  assert.match(html, /\.\.\/styles\.css\?v=20260820-2/);
+  assert.match(html, /\.\.\/styles\.css\?v=20260820-3/);
   assert.match(html, /"@type": "WebApplication"/);
   assert.match(html, /"@type": "Article"/);
   assert.doesNotMatch(html, /aggregateRating|reviewRating|priceCurrency/);

@@ -34,6 +34,8 @@ The dated, terms-based Canadian Club fit check is at [`is-grizzl-e-club-worth-it
 
 The dated, conditions-first Canadian free-charger guide is at [`free-ev-charger-canada/`](free-ev-charger-canada/). It distinguishes supplied hardware, deposit-backed hardware and location-specific rebates, with first-party sources and an invitation-first Grizzl-E path. Run its content, disclosure, source, integration and mobile tests with `node --test tests/free-charger-page.test.mjs`.
 
+The dated Canadian paid-home-charging selector is at [`get-paid-to-charge-ev-canada/`](get-paid-to-charge-ev-canada/). It starts with charger compatibility and ownership, then compares current Grizzl-E Club, ChargeLab Rewards and SWTCH conditions, rates, payouts, data and exit terms. Its Grizzl-E invitation CTA uses only the fixed `organic-paid-to-charge` source tag. Run its content, source, attribution, integration, responsive and social-card tests with `node --test tests/paid-charging-page.test.mjs tests/analytics.test.mjs`.
+
 ## Deployment
 
 GitHub Pages deploys from the `main` branch root. The repository `CNAME`

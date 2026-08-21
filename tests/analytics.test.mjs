@@ -14,13 +14,14 @@ const publicPages = [
   ['ev-charger-cost-calculator-canada/index.html', '../analytics.js'],
   ['grizzle-club-vs-chargelab-rewards-canada/index.html', '../analytics.js'],
   ['is-grizzl-e-club-worth-it-canada/index.html', '../analytics.js'],
-  ['free-ev-charger-canada/index.html', '../analytics.js']
+  ['free-ev-charger-canada/index.html', '../analytics.js'],
+  ['get-paid-to-charge-ev-canada/index.html', '../analytics.js']
 ];
 
 test('every public page loads only the local privacy controller', async () => {
   for (const [file, localScript] of publicPages) {
     const html = await read(file);
-    const local = html.indexOf(`<script src="${localScript}?v=20260820-2"></script>`);
+    const local = html.indexOf(`<script src="${localScript}?v=20260820-3"></script>`);
     assert.notEqual(local, -1, `${file} is missing the local analytics privacy controls`);
     assert.doesNotMatch(html, /gc\.zgo\.at|goatcounter\.com\/count/, `${file} must not load a beacon before privacy controls succeed`);
     const scriptSources = [...html.matchAll(/<script\b[^>]*>/gi)].flatMap(match => {
@@ -156,7 +157,8 @@ test('only exact allow-listed query shapes become campaign attribution', async (
     'opportunity-finder-calculator',
     'opportunity-finder-fit-guide',
     'opportunity-finder-comparison',
-    'opportunity-finder-invitation'
+    'opportunity-finder-invitation',
+    'organic-paid-to-charge'
   ]) {
     const { window } = await runAnalytics(`?src=${tag}`);
     assert.equal(window.EVRewardsAnalytics.source, tag);

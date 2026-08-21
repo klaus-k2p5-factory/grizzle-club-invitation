@@ -32,6 +32,7 @@
     'organic-comparison',
     'organic-cost-calculator',
     'organic-free-charger',
+    'organic-paid-to-charge',
     'opportunity-finder-calculator',
     'opportunity-finder-comparison',
     'opportunity-finder-fit-guide',
