@@ -142,10 +142,10 @@ test('the route is integrated through owned pages, sitemap and privacy-safe anal
     assert.match(html, /get-paid-to-charge-ev-canada\//, `${name} needs the new guide link`);
   }
   assert.match(sitemap, /<loc>https:\/\/www\.evrewards\.ca\/get-paid-to-charge-ev-canada\/<\/loc><lastmod>2026-08-21<\/lastmod>/);
-  assert.equal((sitemap.match(/<url>/g) || []).length, 7);
+  assert.equal((sitemap.match(/<url>/g) || []).length, 8);
   assert.match(analytics, /'organic-paid-to-charge'/);
   const page = await read(pagePath);
-  assert.match(page, /<script src="\.\.\/analytics\.js\?v=20260820-3"><\/script>/);
+  assert.match(page, /<script src="\.\.\/analytics\.js\?v=20260822-1"><\/script>/);
   assert.doesNotMatch(page, /gc\.zgo\.at|goatcounter\.com\/count/);
 });
 

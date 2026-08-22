@@ -86,6 +86,7 @@ test('fit check covers the six material suitability and exit questions', async (
 
 test('15-cent announcement is separated from current base cash tiers', async () => {
   const html = await read(pagePath);
+  assert.match(html, /<div class="bonus-math" role="group" aria-label="15-cent headline components">/);
   assert.match(html, /published August 12, 2026/);
   assert.match(html, /Starting October 1, 2026/);
   assert.match(html, /members who own their Grizzl-E charger/);

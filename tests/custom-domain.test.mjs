@@ -16,7 +16,8 @@ const publicHtml = [
   ['grizzle-club-vs-chargelab-rewards-canada/index.html', `${origin}/grizzle-club-vs-chargelab-rewards-canada/`],
   ['is-grizzl-e-club-worth-it-canada/index.html', `${origin}/is-grizzl-e-club-worth-it-canada/`],
   ['free-ev-charger-canada/index.html', `${origin}/free-ev-charger-canada/`],
-  ['get-paid-to-charge-ev-canada/index.html', `${origin}/get-paid-to-charge-ev-canada/`]
+  ['get-paid-to-charge-ev-canada/index.html', `${origin}/get-paid-to-charge-ev-canada/`],
+  ['about/index.html', `${origin}/about/`]
 ];
 
 test('GitHub Pages source declares the intended canonical www host', async () => {
@@ -39,7 +40,7 @@ test('crawler discovery files publish only the new domain', async () => {
   assert.doesNotMatch(robots, new RegExp(oldHost.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
   assert.doesNotMatch(sitemap, new RegExp(oldHost.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
   for (const [, canonical] of publicHtml) assert.match(sitemap, new RegExp(`<loc>${canonical.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}</loc>`));
-  assert.equal((sitemap.match(/<lastmod>2026-08-(?:20|21)<\/lastmod>/g) || []).length, publicHtml.length);
+  assert.equal((sitemap.match(/<lastmod>2026-08-(?:20|21|22)<\/lastmod>/g) || []).length, publicHtml.length);
   assert.match(sitemap, /<loc>https:\/\/www\.evrewards\.ca\/get-paid-to-charge-ev-canada\/<\/loc><lastmod>2026-08-21<\/lastmod>/);
 });
 
