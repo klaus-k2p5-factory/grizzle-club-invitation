@@ -145,7 +145,7 @@ test('the route is integrated through owned pages, sitemap and privacy-safe anal
   assert.equal((sitemap.match(/<url>/g) || []).length, 8);
   assert.match(analytics, /'organic-paid-to-charge'/);
   const page = await read(pagePath);
-  assert.match(page, /<script src="\.\.\/analytics\.js\?v=20260822-1"><\/script>/);
+  assert.match(page, /<script src="\.\.\/analytics\.js\?v=20260823-1"><\/script>/);
   assert.doesNotMatch(page, /gc\.zgo\.at|goatcounter\.com\/count/);
 });
 

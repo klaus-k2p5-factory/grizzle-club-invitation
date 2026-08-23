@@ -93,6 +93,6 @@ test('about route is integrated sitewide with safe attribution and named homepag
   assert.match(sitemap, /<loc>https:\/\/www\.evrewards\.ca\/about\/<\/loc><lastmod>2026-08-22<\/lastmod>/);
   assert.equal((sitemap.match(/<url>/g) || []).length, 8);
   assert.match(analytics, /'organic-about'/);
-  assert.match(about, /<script src="\.\.\/analytics\.js\?v=20260822-1"><\/script>/);
+  assert.match(about, /<script src="\.\.\/analytics\.js\?v=20260823-1"><\/script>/);
   assert.doesNotMatch(about, /gc\.zgo\.at|goatcounter\.com\/count|<form\b/i);
 });

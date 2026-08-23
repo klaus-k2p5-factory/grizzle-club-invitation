@@ -9,21 +9,23 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = (relative) => readFile(path.join(root, relative), 'utf8');
 
 const publicPages = [
-  ['index.html', 'analytics.js'],
-  ['privacy.html', 'analytics.js'],
-  ['about/index.html', '../analytics.js'],
-  ['ev-charger-cost-calculator-canada/index.html', '../analytics.js'],
-  ['grizzle-club-vs-chargelab-rewards-canada/index.html', '../analytics.js'],
-  ['is-grizzl-e-club-worth-it-canada/index.html', '../analytics.js'],
-  ['free-ev-charger-canada/index.html', '../analytics.js'],
-  ['get-paid-to-charge-ev-canada/index.html', '../analytics.js']
+  ['index.html', 'analytics.js', 'styles.css'],
+  ['privacy.html', 'analytics.js', 'styles.css'],
+  ['about/index.html', '../analytics.js', '../styles.css'],
+  ['ev-charger-cost-calculator-canada/index.html', '../analytics.js', '../styles.css'],
+  ['grizzle-club-vs-chargelab-rewards-canada/index.html', '../analytics.js', '../styles.css'],
+  ['is-grizzl-e-club-worth-it-canada/index.html', '../analytics.js', '../styles.css'],
+  ['free-ev-charger-canada/index.html', '../analytics.js', '../styles.css'],
+  ['get-paid-to-charge-ev-canada/index.html', '../analytics.js', '../styles.css'],
+  ['grizzl-e-club-invitation-canada/index.html', '../analytics.js', '../styles.css']
 ];
 
 test('every public page loads only the local privacy controller', async () => {
-  for (const [file, localScript] of publicPages) {
+  for (const [file, localScript, localStyles] of publicPages) {
     const html = await read(file);
-    const local = html.indexOf(`<script src="${localScript}?v=20260822-1"></script>`);
+    const local = html.indexOf(`<script src="${localScript}?v=20260823-1"></script>`);
     assert.notEqual(local, -1, `${file} is missing the local analytics privacy controls`);
+    assert.match(html, new RegExp(`<link rel="stylesheet" href="${localStyles.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\?v=20260823-1">`), `${file} is missing the current shared stylesheet`);
     assert.doesNotMatch(html, /gc\.zgo\.at|goatcounter\.com\/count/, `${file} must not load a beacon before privacy controls succeed`);
     const scriptSources = [...html.matchAll(/<script\b[^>]*>/gi)].flatMap(match => {
       const src = match[0].match(/\bsrc\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/i);
@@ -160,7 +162,9 @@ test('only exact allow-listed query shapes become campaign attribution', async (
     'opportunity-finder-comparison',
     'opportunity-finder-invitation',
     'organic-paid-to-charge',
-    'organic-about'
+    'organic-about',
+    'google-search-ads',
+    'organic-sitewide-free-charger'
   ]) {
     const { window } = await runAnalytics(`?src=${tag}`);
     assert.equal(window.EVRewardsAnalytics.source, tag);
