@@ -75,6 +75,9 @@
   .ad-benefits article{padding:26px 24px 26px 70px}
   .ad-number{left:24px;top:29px}
 }
+@media(max-width:650px){
+  .ad-page .ad-hero .hero-actions{display:none}
+}
 @media(max-width:380px){
   .ad-hero h1{font-size:2.38rem}
   .ad-hero .hero-content{padding-top:38px}

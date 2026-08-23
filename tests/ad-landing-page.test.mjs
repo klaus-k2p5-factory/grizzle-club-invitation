@@ -15,11 +15,12 @@ test('paid landing page leads with the qualified free-charger offer', async () =
   assert.match(html, /<meta name="robots" content="noindex,follow">/);
   assert.match(html, /<link rel="canonical" href="https:\/\/www\.evrewards\.ca\/grizzl-e-club-invitation-canada\/">/);
   assert.match(text, /Get a free Grizzl-E Level 2 charger/i);
+  assert.match(html, /<link rel="stylesheet" href="\.\.\/ad-landing\.css\?v=20260823-2">/);
   assert.match(html, /<span class="no-break">Grizzl-E<\/span>/);
   assert.match(css, /\.ad-page\s+\.no-break\s*\{[^}]*white-space:\s*nowrap/s);
   assert.match(css, /\.ad-page\s+\.disclosure-inner\s+a\s*\{[^}]*display:\s*inline/s);
-  assert.match(html, /Earn cash rewards on your home charging\./i);
-  assert.match(html, /can help offset your home-charging electricity costs/i);
+  assert.match(html, /Earn cash rewards every time you charge at home with your Club charger\./i);
+  assert.match(html, /Rewards help offset home-charging electricity costs\./i);
   assert.match(html, /Join thousands of Canadian EV drivers/i);
   assert.match(html, /Official Club statistics reported more than 21,000 members when checked August 23, 2026/i);
 
@@ -32,7 +33,8 @@ test('paid landing page leads with the qualified free-charger offer', async () =
 
   assert.match(html, />Request an invite to apply for a free charger</i);
   assert.match(html, /<div class="ad-benefits" role="group" aria-label="What the offer includes">/);
-  assert.doesNotMatch(html, /class="mobile-cta"/);
+  assert.match(html, /<div class="mobile-cta"><a class="button button-primary" href="#lead-form">Request invite<\/a><\/div>/);
+  assert.match(css, /@media\(max-width:650px\)[\s\S]*\.ad-page \.ad-hero \.hero-actions\{display:none\}/);
   assert.doesNotMatch(html, /\$0 upfront|\$100|stop bots|passive income|up to 15\s*¢|15\s*¢\/kWh/i);
 });
 
@@ -40,7 +42,9 @@ test('paid landing page stays focused while disclosing material Club conditions'
   const html = await read(pagePath);
   assert.doesNotMatch(html, /ChargeLab|SWTCH|Compare programs|Cost calculator/i);
   assert.match(html, /Grizzl-E Club is a private program run by United Chargers/i);
-  assert.match(html, /standard Club charging rewards are determined under current terms/i);
+  assert.match(html, /Club reward rates and payments follow current terms/i);
+  assert.match(html, /United Chargers designs and manufactures Grizzl-E chargers in Ontario/i);
+  assert.doesNotMatch(html, /recorded home charging|recorded charging data|eligible home charging|Connected charging earns rewards/i);
 
   const formStart = html.indexOf('<form id="lead-form"');
   assert.ok(formStart > 0, 'missing invitation form');
@@ -50,8 +54,8 @@ test('paid landing page stays focused while disclosing material Club conditions'
     /refundable security deposit/i,
     /shipping, handling and delivery/i,
     /installation and electrical work/i,
-    /continuous Wi-Fi/i,
-    /4–6 charging sessions per month/i,
+    /Keep the charger connected to Wi-Fi/i,
+    /Active use is defined as a minimum of 4 to 6 charging sessions per month\./i,
     /remains United Chargers property/i,
     /return the charger if membership ends/i
   ]) {
@@ -59,12 +63,12 @@ test('paid landing page stays focused while disclosing material Club conditions'
   }
 
   assert.match(html, /https:\/\/club\.grizzl-e\.com\/en\/terms/);
-  assert.match(html, /Terms checked August 23, 2026/i);
+  assert.doesNotMatch(html, /Terms checked August 23, 2026|then return here before registering/i);
 });
 
 test('paid landing page preserves the consent-first invitation sequence', async () => {
   const html = await read(pagePath);
-  assert.match(html, /Request your invitation before creating a Grizzl-E Club account/i);
+  assert.match(html, /Request your invitation to the Grizzl-E Club below\./i);
   assert.match(html, /Wait for the official invitation email/i);
   assert.match(html, /Open its link and apply with the same email/i);
   assert.match(html, /<form id="lead-form"[^>]+formResponse/);
@@ -86,4 +90,14 @@ test('paid landing page remains outside organic crawler discovery', async () => 
   const [html, sitemap] = await Promise.all([read(pagePath), read('sitemap.xml')]);
   assert.match(html, /<meta name="robots" content="noindex,follow">/);
   assert.doesNotMatch(sitemap, /grizzl-e-club-invitation-canada/);
+});
+
+test('mobile form shortcut clears material conditions and the form', async () => {
+  const [html, js] = await Promise.all([read(pagePath), read('ad-landing.js')]);
+  assert.match(html, /<script src="\.\.\/ad-landing\.js\?v=20260823-1" defer><\/script>/);
+  assert.match(js, /querySelectorAll\('\.ad-conditions, #request'\)/);
+  assert.match(js, /rect\.top < window\.innerHeight && rect\.bottom > 0/);
+  assert.match(js, /mobileCta\.style\.display = intersects \? 'none' : ''/);
+  assert.match(js, /addEventListener\('scroll', updateMobileCta/);
+  assert.match(js, /addEventListener\('resize', updateMobileCta/);
 });
