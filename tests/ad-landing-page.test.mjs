@@ -36,7 +36,16 @@ test('paid landing page leads with the qualified free-charger offer', async () =
   assert.match(html, /<div class="ad-benefits" role="group" aria-label="What the offer includes">/);
   assert.match(html, /<div class="mobile-cta"><a class="button button-primary" href="#lead-form">Request invite<\/a><\/div>/);
   assert.match(css, /@media\(max-width:650px\)[\s\S]*\.ad-page \.ad-hero \.hero-actions\{display:none\}/);
+  assert.doesNotMatch(html, /fetchpriority=/i);
   assert.doesNotMatch(html, /\$0 upfront|\$100|stop bots|passive income/i);
+
+  const program = html.slice(html.indexOf('<section class="section ad-program"'), html.indexOf('<section class="section ad-steps"'));
+  assert.match(program, /<h2>Grizzl-E Club supplies the charger\. Earn up to 15¢\/kWh on all home charging through your Club charger\.\*<\/h2>/i);
+  assert.match(program, /bring their own Grizzl-E or get a free Club charger/i);
+  assert.match(program, /Starting October 1, 2026/i);
+  assert.match(program, /Reaching 15¢\/kWh requires the Ultimate level/i);
+  assert.match(program, /extra 5¢\/kWh is issued as Thanksgiving Bonus Points scheduled to convert to cash on October 1, 2027/i);
+  assert.match(program, /Current Club rewards reach up to 10¢\/kWh before the increase/i);
 });
 
 test('paid landing page stays focused while disclosing material Club conditions', async () => {
@@ -69,13 +78,13 @@ test('paid landing page stays focused while disclosing material Club conditions'
   const rateFaq = html.slice(html.indexOf('<section class="section ad-faq"'));
   assert.match(rateFaq, /Can the Club pay up to 15¢\/kWh\?/i);
   assert.match(rateFaq, /starting October 1, 2026/i);
-  assert.match(rateFaq, /own their Grizzl-E charger/i);
+  assert.match(rateFaq, /bring their own Grizzl-E or get a free Club charger/i);
   assert.match(rateFaq, /reach the Ultimate level/i);
   assert.match(rateFaq, /Thanksgiving Bonus Points/i);
   assert.match(rateFaq, /convert to cash on October 1, 2027/i);
-  assert.match(rateFaq, /free-charger path currently advertises rewards up to 10¢\/kWh/i);
-  assert.match(rateFaq, /do not assume the owner-only bonus applies to this invitation path/i);
+  assert.match(rateFaq, /Current Club rewards reach up to 10¢\/kWh before the increase/i);
   assert.match(rateFaq, /https:\/\/grizzl-e\.com\/news\/364/);
+  assert.doesNotMatch(html, /owner-only bonus|who own their Grizzl-E charger/i);
 });
 
 test('paid landing page preserves the consent-first invitation sequence', async () => {
@@ -104,10 +113,10 @@ test('paid landing page remains outside organic crawler discovery', async () => 
   assert.doesNotMatch(sitemap, /grizzl-e-club-invitation-canada/);
 });
 
-test('mobile form shortcut clears material conditions and the form', async () => {
+test('mobile form shortcut clears rate details, material conditions and the form', async () => {
   const [html, js] = await Promise.all([read(pagePath), read('ad-landing.js')]);
-  assert.match(html, /<script src="\.\.\/ad-landing\.js\?v=20260823-1" defer><\/script>/);
-  assert.match(js, /querySelectorAll\('\.ad-conditions, #request'\)/);
+  assert.match(html, /<script src="\.\.\/ad-landing\.js\?v=20260823-2" defer><\/script>/);
+  assert.match(js, /querySelectorAll\('\.ad-program, \.ad-conditions, #request'\)/);
   assert.match(js, /rect\.top < window\.innerHeight && rect\.bottom > 0/);
   assert.match(js, /mobileCta\.style\.display = intersects \? 'none' : ''/);
   assert.match(js, /addEventListener\('scroll', updateMobileCta/);
