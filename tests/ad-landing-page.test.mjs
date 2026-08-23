@@ -30,12 +30,13 @@ test('paid landing page leads with the qualified free-charger offer', async () =
   assert.match(beforeFirstCta, /Refundable deposit, shipping and installation apply\./i);
   assert.match(beforeFirstCta, /Peter Mucha may receive CAD \$0\.01 per eligible referred kWh/i);
   assert.match(beforeFirstCta, /Request first, wait for the official invitation, then apply through its link using the same email/i);
+  assert.doesNotMatch(beforeFirstCta, /up to 15\s*¢\/kWh/i);
 
   assert.match(html, />Request an invite to apply for a free charger</i);
   assert.match(html, /<div class="ad-benefits" role="group" aria-label="What the offer includes">/);
   assert.match(html, /<div class="mobile-cta"><a class="button button-primary" href="#lead-form">Request invite<\/a><\/div>/);
   assert.match(css, /@media\(max-width:650px\)[\s\S]*\.ad-page \.ad-hero \.hero-actions\{display:none\}/);
-  assert.doesNotMatch(html, /\$0 upfront|\$100|stop bots|passive income|up to 15\s*¢|15\s*¢\/kWh/i);
+  assert.doesNotMatch(html, /\$0 upfront|\$100|stop bots|passive income/i);
 });
 
 test('paid landing page stays focused while disclosing material Club conditions', async () => {
@@ -64,6 +65,17 @@ test('paid landing page stays focused while disclosing material Club conditions'
 
   assert.match(html, /https:\/\/club\.grizzl-e\.com\/en\/terms/);
   assert.doesNotMatch(html, /Terms checked August 23, 2026|then return here before registering/i);
+
+  const rateFaq = html.slice(html.indexOf('<section class="section ad-faq"'));
+  assert.match(rateFaq, /Can the Club pay up to 15¢\/kWh\?/i);
+  assert.match(rateFaq, /starting October 1, 2026/i);
+  assert.match(rateFaq, /own their Grizzl-E charger/i);
+  assert.match(rateFaq, /reach the Ultimate level/i);
+  assert.match(rateFaq, /Thanksgiving Bonus Points/i);
+  assert.match(rateFaq, /convert to cash on October 1, 2027/i);
+  assert.match(rateFaq, /free-charger path currently advertises rewards up to 10¢\/kWh/i);
+  assert.match(rateFaq, /do not assume the owner-only bonus applies to this invitation path/i);
+  assert.match(rateFaq, /https:\/\/grizzl-e\.com\/news\/364/);
 });
 
 test('paid landing page preserves the consent-first invitation sequence', async () => {
