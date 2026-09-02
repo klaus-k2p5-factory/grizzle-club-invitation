@@ -103,7 +103,7 @@ test('paid landing page preserves the consent-first invitation sequence', async 
   assert.match(html, /Request received\. Please wait for your invitation link to arrive by email\./i);
   assert.match(html, /Do not register separately[\s\S]*same email/i);
   assert.match(html, /<script src="\.\.\/analytics\.js\?v=20260823-1"><\/script>/);
-  assert.match(html, /<script src="\.\.\/script\.js\?v=20260820-1" defer><\/script>/);
+  assert.match(html, /<script src="\.\.\/script\.js\?v=20260902-1" defer><\/script>/);
   assert.doesNotMatch(html, /href\s*=\s*["'](?:https?:)?\/\/club\.grizzl-e\.com\/?(?:[?#][^"']*)?["']/i);
 });
 

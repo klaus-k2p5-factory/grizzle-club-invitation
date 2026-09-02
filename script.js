@@ -69,6 +69,13 @@
       return;
     }
 
+    const emailField = form.querySelector('input[type="email"]');
+    if (emailField && !emailField.checkValidity()) {
+      event.preventDefault();
+      showError('Please enter a valid email for the official invitation.', emailField);
+      return;
+    }
+
     if (notRegistered && !notRegistered.checked) {
       event.preventDefault();
       showError('Please confirm that you have not already registered this email before registering through the official invitation.', notRegistered);

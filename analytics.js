@@ -25,6 +25,8 @@
     'forum-rivian-canada',
     'forum-tmc-canada',
     'google-search-ads',
+    'google-search-free-charger',
+    'google-search-10c-rewards',
     'manitobaev-ev-links',
     'manitobaev-links-review',
     'ndem-waterloo-event-resource',

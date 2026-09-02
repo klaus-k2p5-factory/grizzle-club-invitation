@@ -17,7 +17,9 @@ const publicPages = [
   ['is-grizzl-e-club-worth-it-canada/index.html', '../analytics.js', '../styles.css'],
   ['free-ev-charger-canada/index.html', '../analytics.js', '../styles.css'],
   ['get-paid-to-charge-ev-canada/index.html', '../analytics.js', '../styles.css'],
-  ['grizzl-e-club-invitation-canada/index.html', '../analytics.js', '../styles.css']
+  ['grizzl-e-club-invitation-canada/index.html', '../analytics.js', '../styles.css'],
+  ['free-grizzl-e-charger-canada/index.html', '../analytics.js', '../styles.css'],
+  ['ev-home-charging-rewards-canada/index.html', '../analytics.js', '../styles.css']
 ];
 
 test('every public page loads only the local privacy controller', async () => {
@@ -164,6 +166,8 @@ test('only exact allow-listed query shapes become campaign attribution', async (
     'organic-paid-to-charge',
     'organic-about',
     'google-search-ads',
+    'google-search-free-charger',
+    'google-search-10c-rewards',
     'organic-sitewide-free-charger'
   ]) {
     const { window } = await runAnalytics(`?src=${tag}`);
