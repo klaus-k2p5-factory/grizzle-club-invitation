@@ -80,9 +80,9 @@ test('volatile reward and payout claims preserve current versus future timing', 
   assert.doesNotMatch(html, /currently pays[^<]{0,80}\$0\.11|current rate[^<]{0,80}\$0\.11/i);
 });
 
-test('the guide explains the private carbon-credit mechanism and connected-data trade-off', async () => {
+test('the guide explains the provider carbon-credit mechanism and connected-data trade-off', async () => {
   const html = await read(pagePath);
-  assert.match(html, /private reward programs—not Government of Canada payments/i);
+  assert.match(html, /Provider reward programs—not Government of Canada payments/i);
   assert.match(html, /Clean Fuel Regulations establish a credit market/i);
   assert.match(html, /charging network operators can create credits for residential EV charging/i);
   assert.match(html, /revenues[\s\S]*financial incentives for consumers/i);

@@ -26,7 +26,7 @@ const routes = [
     page: 'ev-home-charging-rewards-canada/index.html',
     url: 'https://www.evrewards.ca/ev-home-charging-rewards-canada/',
     source: 'google-search-10c-rewards',
-    title: /Earn up to 10¢\/kWh in private home-charging rewards/i,
+    title: /Earn up to 10¢\/kWh in home-charging rewards/i,
     firstCta: /Request an invite to apply for Club rewards/i,
     requiredBeforeFirstCta: [
       /Request first, wait for the official invitation, then apply through its link using the same email/i,
@@ -45,7 +45,7 @@ const formRequirements = [
   /Do not register separately[\s\S]*same email/i
 ];
 
-test('new paid-search routes are self-canonical, private and invitation-first', async () => {
+test('new paid-search routes are self-canonical, noindex and invitation-first', async () => {
   const sitemap = await read('sitemap.xml');
   for (const route of routes) {
     const html = await read(route.page);
@@ -88,12 +88,12 @@ test('free route keeps the full Club setup conditions before the form', async ()
   ]) assert.match(beforeForm, requirement);
 });
 
-test('current-rewards route is only about current up-to-10-cent private rewards', async () => {
+test('current-rewards route is only about current up-to-10-cent Club rewards', async () => {
   const html = await read('ev-home-charging-rewards-canada/index.html');
   const text = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
-  assert.match(text, /private Grizzl-E Club rewards/i);
+  assert.match(text, /Club benefit supported by Canada’s Clean Fuel Regulations credit system/i);
   assert.match(text, /up to 10¢\/kWh/i);
-  assert.match(text, /not a government rebate/i);
+  assert.match(text, /not a direct government rebate or government endorsement/i);
   assert.match(text, /Approval and current terms control/i);
   assert.doesNotMatch(html, /15\s*(?:¢|cents?|cent|\/kWh|kWh)|Thanksgiving Bonus Points|October 1, 2027|news\/364/i);
 });

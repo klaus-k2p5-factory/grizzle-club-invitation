@@ -51,7 +51,7 @@ test('paid landing page leads with the qualified free-charger offer', async () =
 test('paid landing page stays focused while disclosing material Club conditions', async () => {
   const html = await read(pagePath);
   assert.doesNotMatch(html, /ChargeLab|SWTCH|Compare programs|Cost calculator/i);
-  assert.match(html, /Grizzl-E Club is a private program run by United Chargers/i);
+  assert.match(html, /A Club benefit supported by Canada’s Clean Fuel Regulations credit system and administered by United Chargers/i);
   assert.match(html, /Club reward rates and payments follow current terms/i);
   assert.match(html, /United Chargers designs and manufactures Grizzl-E chargers in Ontario/i);
   assert.doesNotMatch(html, /recorded home charging|recorded charging data|eligible home charging|Connected charging earns rewards/i);

@@ -43,7 +43,7 @@ test('editorial standards prioritize dated first-party evidence and visible corr
   assert.match(html, /each factual guide shows when its volatile claims were checked/i);
   assert.match(html, /legal terms take priority/i);
   assert.match(html, /does not claim a hands-on hardware test unless one was actually performed/i);
-  assert.match(html, /does not turn a private reward program into a government rebate, endorsement or guaranteed entitlement/i);
+  assert.match(html, /does not turn a provider reward program into a government rebate, endorsement or guaranteed entitlement/i);
   assert.match(html, /Material commercial relationships are disclosed beside the decisions they may affect/i);
   assert.doesNotMatch(html, /buy a ranking|ranking claim|best provider|unbiased ranking/i);
   assert.match(html, /rates, eligibility, compatibility and program rules can change/i);
