@@ -56,7 +56,7 @@ test('new paid-search routes are self-canonical, noindex and invitation-first', 
     assert.match(text, route.title);
     assert.match(html, /<script src="\.\.\/analytics\.js\?v=20260823-1"><\/script>/);
     assert.match(html, /<script src="\.\.\/script\.js\?v=20260902-1" defer><\/script>/);
-    assert.match(html, /<script src="\.\.\/ad-landing\.js\?v=20260823-2" defer><\/script>/);
+    assert.match(html, /<script src="\.\.\/ad-landing\.js\?v=20260907-1" defer><\/script>/);
     assert.doesNotMatch(html, /gc\.zgo\.at|googletagmanager|gtag\(|enhanced conversions|conversion_action/i);
     assert.doesNotMatch(html, /href\s*=\s*["'](?:https?:)?\/\/club\.grizzl-e\.com\/?(?:[?#][^"']*)?["']/i);
     assert.doesNotMatch(sitemap, new RegExp(route.url.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));

@@ -115,8 +115,8 @@ test('paid landing page remains outside organic crawler discovery', async () => 
 
 test('mobile form shortcut clears rate details, material conditions and the form', async () => {
   const [html, js] = await Promise.all([read(pagePath), read('ad-landing.js')]);
-  assert.match(html, /<script src="\.\.\/ad-landing\.js\?v=20260823-2" defer><\/script>/);
-  assert.match(js, /querySelectorAll\('\.ad-program, \.ad-conditions, #request'\)/);
+  assert.match(html, /<script src="\.\.\/ad-landing\.js\?v=20260907-1" defer><\/script>/);
+  assert.match(js, /querySelectorAll\('\.ad-hero, \.ad-program, \.ad-sequence, \.ad-conditions, #request'\)/);
   assert.match(js, /rect\.top < window\.innerHeight && rect\.bottom > 0/);
   assert.match(js, /mobileCta\.style\.display = intersects \? 'none' : ''/);
   assert.match(js, /addEventListener\('scroll', updateMobileCta/);

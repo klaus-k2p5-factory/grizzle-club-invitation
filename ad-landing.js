@@ -1,6 +1,6 @@
 (() => {
   const mobileCta = document.querySelector('.mobile-cta');
-  const hideRegions = [...document.querySelectorAll('.ad-program, .ad-conditions, #request')];
+  const hideRegions = [...document.querySelectorAll('.ad-hero, .ad-program, .ad-sequence, .ad-conditions, #request')];
   if (!mobileCta || !hideRegions.length) return;
 
   const updateMobileCta = () => {
